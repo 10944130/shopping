@@ -1237,7 +1237,7 @@ span.psw2 {
 .hotsale-1>img,
 .hotsale-3>img {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 28%;
     left: 180px;
     top: -77px;
@@ -1245,7 +1245,7 @@ span.psw2 {
 
 .hotsale-2>img {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 33.3%;
     left: 170px;
     top: -80px;
