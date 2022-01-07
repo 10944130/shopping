@@ -1,0 +1,1339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Comic Sans MS";
+    letter-spacing: 1.85px;
+}
+
+body {
+    background-image: url(../img/back9.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    letter-spacing: 1.5px;
+    transition: ease-in-out 0.4s;
+}
+
+
+/*浮動目錄------------------------------------------------------------------------------------------------------------*/
+#navbar {
+    background-color: rgb(255, 255, 255);
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    z-index: 999;
+    top: -100px;
+    /* Hide the navbar 50 px outside of the top view */
+    width: 100%;
+    height: 80px;
+    /* Full width */
+    transition: top 0.3s;
+    box-shadow: rgb(138, 137, 137) 5px 5px 15px;
+    /* Transition effect when sliding down (and up) */
+}
+
+.navbarclass {
+    margin: auto;
+
+}
+
+.navbarimportant {
+    display: flex;
+    margin: auto;
+    width: 1500px;
+    height: 80px;
+}
+
+.home-0 {
+    display: table;
+    float: left;
+    width: 15%;
+    padding-right: 50px;
+}
+
+.home-0>a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(172, 155, 119);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.menu-0 {
+    display: block;
+    width: 85%;
+    text-align: center;
+    float: right;
+    margin-left: 345px;
+}
+
+.menu-0>ul {
+    /* display: inline-block; */
+    list-style-type: none;
+    text-align: center;
+    /* padding-top:calc(40px - 13.045px); */
+
+}
+
+.menu-0>ul>li {
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.menu-0>ul>li>a,
+.menu-1>a {
+    text-decoration: none;
+    color: black;
+    transition: all .4s;
+    padding: 11px 4px 11px 4px;
+    font-size: 18px;
+    position: relative;
+}
+
+/*目錄hover，要把它們寫一起*/
+.menu-0>ul>li>a:hover,
+.menu-1>a:hover {
+    background-color: #e6e6e69c;
+}
+
+.car-shop>a :hover,
+.car-shop>img:hover {
+    background: rgb(206, 206, 206, 0.8);
+    opacity: 0.8;
+}
+
+
+
+/*目次底線色---------------------------------------------------*/
+.undercolor1 {
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    margin-top: -30px;
+    margin-left: 3.3px;
+    background-color: #eddfa5;
+}
+
+.undercolor2 {
+    position: absolute;
+    width: 74px;
+    height: 3px;
+    margin-top: -30px;
+    margin-left: 3.3px;
+    background-color: #f2e9e9;
+}
+
+.undercolor3 {
+    position: absolute;
+    width: 110px;
+    height: 3px;
+    margin-top: -30px;
+    margin-left: 3.3px;
+    background-color: #d5d1e6;
+}
+
+.undercolor4 {
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    margin-top: -30px;
+    margin-left: 3.3px;
+    background-color: #d3dfe5;
+}
+
+/*.undercolor5 {
+    position: absolute;
+    width: 64px;
+    height: 3px;
+    background-color: #b1d6cf;
+}*/
+
+/*.undercolor6 {
+    position: absolute;
+    width: 84px;
+    height: 3px;
+    margin-top: 0px;
+    margin-left: 4px;
+    background-color: #b1d6cf;
+}*/
+
+/*香調下拉框框-----------------------------------------------------------------------------------------------------*/
+.menu-0 ul>li>ul {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    overflow: visible;
+    clear: left;
+    width: 270px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    background-color: white;
+}
+
+.menu ul>li>ul {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    overflow: visible;
+    clear: left;
+    width: 270px;
+    margin-top: 12px;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    background-color: white;
+}
+
+.menu-0 ul>li>ul>li,
+.menu ul>li>ul>li {
+    float: none;
+    display: flex;
+    margin: 5px 10px 5px 10px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.menu-0 ul>li:hover ul,
+.menu ul>li:hover ul {
+    visibility: visible;
+}
+
+.color-1 {
+    width: 5%;
+    height: 37px;
+    background-color: #f2e9e9;
+}
+
+.color-2 {
+    width: 5%;
+    height: 37px;
+    background-color: #eddfa5;
+}
+
+.color-3 {
+    width: 5%;
+    height: 37px;
+    background-color: #c4afa2;
+}
+
+.color-4 {
+    width: 5%;
+    height: 37px;
+    background-color: #d3dfe5;
+}
+
+.fragrance-1,
+.fragrance-2,
+.fragrance-3,
+.fragrance-4 {
+    width: 120%;
+    height: 37px;
+    padding-top: 6px;
+    padding-left: 9px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.fragrance-1:hover {
+    background-color: #f2e9e9;
+}
+
+.fragrance-2:hover {
+    background-color: #eddfa5;
+}
+
+.fragrance-3:hover {
+    background-color: #c4afa2;
+}
+
+.fragrance-4:hover {
+    background-color: #d3dfe5;
+}
+
+/*正常目錄-----------------------------------------------------------------------------------------------------------------*/
+.theme-0 {
+    display: block;
+    width: 1903px;
+    height: 280px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+.theme {
+    display: block;
+    text-align: center;
+    padding: 45px 0px 20px 0px;
+}
+
+.theme>a {
+    text-decoration: none;
+    color: black;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.theme2 {
+    display: block;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    font-size: 16px;
+    color: black;
+}
+
+.theme2>span {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 1px 5px 2px 5px;
+}
+
+.menu-00 {
+    display: flex;
+    width: 100%;
+    height: 70px;
+}
+
+.menu {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding-left: 500px;
+    margin-top: 28px;
+}
+
+.menu>ul,
+.menu-1 {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu>ul>li {
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.menu>ul>li>a,
+.menu-1>a {
+    text-decoration: none;
+    color: black;
+    transition: all .4s;
+    padding: 11px 4px 11px 4px;
+    font-size: 18px;
+}
+
+.menu>ul>li>a:hover,
+.menu-1>a:hover,
+.car-shop>a :hover {
+    background: rgb(206, 206, 206, 0.8);
+    opacity: 0.8;
+}
+
+
+/*登入註冊購物車 button--------------------------------------------------------------------------------------------------------*/
+.hard1-car-shop {
+    display: block;
+    float: right;
+}
+
+.menu-1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-1>a {
+    text-decoration: none;
+    background-color: #b1d6cf;
+    color: white;
+    transition: all .4s;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    position: relative;
+    border: solid #b1d6cf;
+    border-radius: 50px;
+}
+
+.menu-1>a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #90c4b9;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+.menu-2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-2>a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    transition: all .4s;
+    padding: 5px 5px 5px 5px;
+    font-size: 18px;
+    position: relative;
+    border: solid black 2px;
+    border-radius: 50px;
+}
+
+.menu-2>a:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    opacity: 1;
+    border-radius: 50px;
+}
+
+#main {
+    display: block;
+    float: right;
+}
+
+.car-shop {
+    width: 70px;
+    vertical-align: middle;
+    margin-top: 16.5px;
+    padding-left: 25px;
+    height: 80;
+}
+
+.car-shop>img {
+    display: inline-block;
+    width: 100%;
+    transition: all.4s;
+    padding: 6px;
+}
+
+
+/*登入---------------------------------------------------------------------------------------------------*/
+/* Full-width input fields */
+.from-all {
+    width: 100%;
+    height: 100%;
+    display: block;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login {
+    width: auto;
+    display: block;
+    position: relative;
+}
+
+.signup {
+    position: absolute;
+}
+
+.container1>h2 {
+    display: block;
+
+    text-align: center;
+    cursor: pointer;
+    background-color: #fbfcfda9;
+    border-radius: 50px;
+    width: 80px;
+    margin: auto;
+    margin-top: 205px;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.container1>p {
+    display: block;
+    text-align: center;
+    background-color: #fbfcfdc9;
+    border-radius: 10px;
+    width: 50px;
+    margin: auto;
+    margin-top: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container1>h2:hover,
+.container1>p:hover {
+    background-color: #fbfcfd;
+    color: #c0b4a9;
+}
+
+/*.from-all-1::after {
+    position: absolute;
+    z-index: 1000;
+    top: 40px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 470px;
+    background-color: rgb(128, 128, 128);
+}*/
+
+.rememberme {
+    display: block;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: auto;
+    text-align: center;
+    background-color: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.hard1 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.loginnn {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #90c4b9;
+    transition: all .4s;
+    padding: 5px 5px 5px 5px;
+    border: solid #b1d6cf;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}
+
+.loginnn:hover {
+    background-color: #b1d6cf;
+    color: white;
+    opacity: 1;
+}
+
+.loginnnnn {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    transition: all .4s;
+    padding: 5px 5px 5px 5px;
+    border: solid rgba(0, 0, 0, 0.76) 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}
+
+.loginnnnn:hover {
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+.log {
+    display: block;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    border-radius: 10px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 14px 20px;
+}
+
+.cancelbtn {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    width: auto;
+    padding: 10px 18px;
+    margin: 8px 0;
+    color: rgb(255, 255, 255);
+    background-color: #f44336;
+}
+
+.log:hover {
+    opacity: 0.7;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 10px 0;
+    position: relative;
+    z-index: 30;
+    font-size: 15px;
+}
+
+.login>h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.signup>h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/*.underline {
+    background-color: #b69496;
+    width: auto;
+    height: 1px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}*/
+
+.container1 {
+    padding: 25px 40px 25px 40px;
+}
+
+/*.container2 {
+    padding: 12px 0px 12px 0px;
+}*/
+
+span.psw {
+    width: 100%;
+
+}
+
+span.psw2 {
+    width: 100%;
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 31;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    /*background-color: rgb(230, 225, 225);*/
+    background-image: url(../img/background4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    box-shadow: rgb(110, 110, 110) 0px 0px 10px;
+    max-width: 500px;
+    height: 700px;
+    display: block;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+/*購物車拉開--------------------------------------------------------------------------------------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.5s;
+    padding-top: 140px;
+}
+
+.sidenav .closebtn {
+    margin: 15px 0px 15px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn:hover,
+.sidenav .closelist {
+    color: #000000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 80px;
+    right: 25px;
+    font-size: 36px;
+}
+
+.sidenav>p {
+    position: absolute;
+    top: 112px;
+    padding-left: 22px;
+    font-size: 24px;
+}
+
+.car-list {
+    position: relative;
+    padding: 20px;
+}
+
+.car-list::after {
+    position: absolute;
+    content: '';
+    margin: auto;
+    height: 1px;
+    width: 90%;
+    background-color: rgba(105, 105, 105, 0.678);
+}
+
+.car-list>ul>li {
+    list-style: none;
+}
+
+.car-flex {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e2d9d3;
+    cursor: default;
+    border-radius: 10px;
+}
+
+.car-flex:hover,
+.gobuy-click>a:hover {
+    opacity: 0.85;
+}
+
+.car-product {
+    display: table-cell;
+    vertical-align: middle;
+    width: 90px;
+    margin: auto;
+    margin-left: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 5px;
+}
+
+.car-name {
+    line-height: 30px;
+    padding: 0px 30px 0px 25px;
+    color: rgb(53, 53, 53);
+}
+
+.car-name>h1 {
+    font-size: 22px;
+}
+
+.car-name>p,
+.car-name>span {
+    font-size: 20px;
+}
+
+.sidenav .closelist {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    text-decoration: none;
+    font-size: 24px;
+    color: #313131;
+    transition: 0.3s;
+}
+
+.gobuy {
+    margin-bottom: 200px;
+    font-size: 20px;
+}
+
+.gobuy>p {
+    float: left;
+    padding-left: 25px;
+
+}
+
+.gobuy>span {
+    float: right;
+    padding-right: 25px;
+}
+
+.gobuy-click {
+    float: right;
+    margin: 30px 20px 0px 0px;
+}
+
+.gobuy-click>a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: lightcoral;
+}
+
+/*重要! 固定目錄下方物件高度 ----------------------------------------------------------------------------------------------------*/
+.expect-header-height {
+    display: block;
+    width: 1903px;
+    margin: auto;
+
+}
+
+/*動態廣告----------------------------------------------------------------------------------------------------*/
+
+.section-1 {
+    display: block;
+    margin: auto;
+    height: 900px;
+    position: relative;
+    background-color: white;
+}
+
+/*.dy-text {
+    width: 50%;
+    /*margin-right: 70px;
+    margin-top: 70px;*/
+/*margin-bottom: 166px;
+    background-image: url(../img/text1.png);
+    text-align: center;
+    font-size: 45px;
+}
+
+.dy-text-background {
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff36;
+}
+
+.dy-text-position {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dy-text-position>p {
+    line-height: 110px;
+}*/
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    height: 900px;
+    display: block;
+    margin: auto;
+    /*margin-left: 70px;*/
+    margin-top: 0px;
+}
+
+.a0 {
+    position: relative;
+    z-index: 10;
+}
+
+.a1 {
+    position: absolute;
+    top: 0;
+    z-index: 99900;
+    height: 100%;
+    background: rgba(116, 116, 116, 0.637);
+    box-shadow: rgba(107, 107, 107, 0.89) 5px 1px 20px;
+}
+
+/*.dynamic-0 {
+    position: absolute;
+    z-index: 100;
+    margin-top: 10%;
+    left: 15%;
+    height: 460px;
+    width: 200px;
+}
+
+/* Caption text */
+/*
+.upwordtext {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.67);
+    display: table;
+}
+
+.upwordtext>p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}*/
+
+.text-ad {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    width: 80%;
+    height: 900px;
+    background-color: rgba(255, 255, 255, 0.315);
+    display: table;
+}
+
+#my-ad-4 {
+    display: flex;
+}
+
+.dynamic_ad {
+    position: absolute;
+    z-index: 4;
+    width: 80%;
+}
+
+
+/*動態廣告右側字幕-------------------*/
+.dy-right {
+    position: absolute;
+    right: 0;
+    background-color: #fff0b3;
+    width: 20%;
+    height: 900px;
+
+}
+
+.dy-right>span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 2px;
+    top: 180px;
+    font-size: 20px;
+}
+
+.ad-right-text {
+    position: absolute;
+    display: table;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    height: 900px;
+    color: black;
+}
+
+.ad-right-text>p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    line-height: 70px;
+    letter-spacing: 2px;
+
+    font-size: 24px;
+    overflow: hidden;
+}
+
+/*--------------------------------------*/
+.dot-dot {
+    display: block;
+}
+
+.dot {
+    height: 0px;
+    width: 0px;
+    margin: 0 2px;
+    background-color: rgba(204, 204, 204, 0);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #75757500;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*section-3----------------------------------------------------------------------------------*/
+
+.section-3 {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 1903px;
+    margin: auto;
+    position: relative;
+}
+
+/* Slideshow container */
+.slidessshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#mySlidesss {
+    overflow: hidden;
+}
+
+#mySlidesss>img {
+    transition: all 2s linear;
+}
+
+#mySlidesss>img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.slidessshow-container>h1 {
+    position: absolute;
+    z-index: 10;
+    top: 150px;
+    text-shadow: rgb(163, 163, 163) 5px 5px 5px;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: #eddfa5;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #fcd967;
+}
+
+.dottt-dotttt {
+    position: absolute;
+    left: 900px;
+    bottom: 50px;
+}
+
+/* The dots/bullets/indicators */
+.dottt {
+    cursor: pointer;
+    height: 5px;
+    width: 18px;
+    margin: 0 10px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active,
+.dottt:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fadeee {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeee {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeee {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+/*section-2-------------------------------------------------------------------------------------------*/
+.section-2-hotsale {
+    width: 1903px;
+    margin: auto;
+}
+
+.section-2 {
+    display: block;
+    width: 1500px;
+    height: auto;
+    margin: auto;
+    padding: 80px 0px 40px 0px;
+}
+
+.section-2-theme {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    text-align: center;
+    text-shadow: rgb(163, 163, 163) 5px 5px 5px;
+    font-style: italic;
+    font-size: 40px;
+}
+
+/*.section-2-theme>span {
+    font-weight: normal;
+    font-size: 30px;
+}*/
+
+.hotsale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hotsale-1,
+.hotsale-2,
+.hotsale-3 {
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+    position: relative;
+    transition: all 2s linear;
+}
+
+.hotsale-1:hover,
+.hotsale-2:hover,
+.hotsale-3:hover {
+    transform: translate(0, -50px);
+}
+
+.hotsale-1>img,
+.hotsale-3>img {
+    position: absolute;
+    z-index: 2;
+    width: 28%;
+    left: 180px;
+    top: -77px;
+}
+
+.hotsale-2>img {
+    position: absolute;
+    z-index: 2;
+    width: 33.3%;
+    left: 170px;
+    top: -80px;
+}
+
+.card {
+    display: block;
+    width: 300px;
+    padding: 15px 15px 20px 15px;
+    background-color: #eddfa5;
+    text-align: center;
+}
+
+.card-big {
+    display: block;
+    width: 400px;
+    margin: auto;
+    padding: 12px 12px 20px 12px;
+    text-align: center;
+    background-color: #eddfa5;
+}
+
+.card img,
+.card-big img {
+    width: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card img:hover,
+.card-big img:hover {
+    opacity: 1;
+    /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2)*/
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding-top: 5px;
+}
+
+.container>h4 {
+    font-size: 20px;
+}
+
+/*登入/註冊----------------------------------------------------------------------------------*/
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* 動態廣告 ----------------------------------------------------*/
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+}
+
+/*section-3 NEW GOODS-----------------------------------------------------*/
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}

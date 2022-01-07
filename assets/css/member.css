@@ -1,0 +1,706 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Comic Sans MS";
+    letter-spacing: 1.85px;
+}
+
+body {
+    background-image: url(../img/member5.jpg);
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: #ffffff;
+    letter-spacing: 1.8px;
+    transition: ease-in-out 0.4s;
+    box-shadow: rgb(138, 137, 137) 5px 5px 15px;
+}
+
+/*重要! 固定目錄下方物件高度 ----------------------------------------------------------------------------------------------------*/
+.expect-header-height {
+    display: block;
+    width: 1500px;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: rgb(155, 155, 155) 0px 5px 15px;
+}
+
+.expect-header-height>h1 {
+    text-align: center;
+    padding: 70px 0px 60px 0px;
+    letter-spacing: 3px;
+}
+
+/*動態廣告----------------------------------------------------------------------------------------------------*/
+/*.slideshow-container {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.dynamic-0 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 10%;
+    left: 15%;
+    height: 460px;
+    width: 200px;
+}*/
+
+/* Caption text */
+/*.upwordtext {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.67);
+    display: table;
+}
+
+.upwordtext>p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-ad {
+    position: absolute;
+    z-index: 5;
+    top: 20%;
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: table;
+}
+
+.text-ad>p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.dynamic_ad {
+    position: absolute;
+    width: 100%;
+}*/
+
+
+
+/*會員==============================================================================================================================*/
+input[type=changename],
+input[type=changeaccount],
+input[type=changephone],
+input[type=changenick],
+input[type=changebirth],
+input[type=changesex] {
+    width: 92%;
+    padding: 12px 20px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    /*border-radius: 10px;*/
+}
+
+.password-input {
+    padding-top: 40px;
+}
+
+input[type=oldpassword],
+input[type=newpassword] {
+    width: 89%;
+    padding: 12px 20px;
+    margin: 12px 0px 20px 0px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    /*border-radius: 10px;*/
+}
+
+.profile-input {
+    padding-left: 0px;
+}
+
+input[type=changemail],
+input[type=confirm] {
+    width: 86%;
+    padding: 12px 20px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.member-all {
+    display: flex;
+    margin: auto;
+    padding-bottom: 40px;
+    width: 1500px;
+}
+
+.tab {
+    display: block;
+    overflow: hidden;
+    background-color: none;
+    width: 400px;
+    height: 750px;
+    margin-left: 40px;
+
+}
+
+.tab-content {
+    height: 240px;
+    margin-left: 70px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #faeebf;
+    padding: 24px 26px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab-content img {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    transform: scale(1, 1);
+    border-radius: 50%;
+}
+
+.tab button span {
+    position: absolute;
+    z-index: 99;
+    margin-top: -30px;
+    margin-left: -20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(182, 211, 228, 0.65);
+    font-weight: bold;
+}
+
+.tab-content img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.tab button span:hover {
+    font-size: 25px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgba(247, 220, 147, 0.801);
+}
+
+.tab button.active img {
+    transform: scale((1.2, 1.2));
+    box-shadow: rgb(161, 156, 156) 5px 5px 15px;
+}
+
+.tab button.active span {
+    font-size: 25px;
+    text-shadow: rgb(182, 181, 181) 2px 2px 0px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    width: 950px;
+    height: 740px;
+    margin: auto;
+    margin: 0px 30px 30px 0px;
+    padding: 40px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    background-color: rgba(255, 255, 255, 0.719);
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.london-backgroundcolor,
+.profile-backgroundcolor,
+.password-backgroundcolor {
+    position: relative;
+    width: auto;
+    height: 100%;
+    border-radius: 60px;
+    padding: 50px;
+}
+
+/*background-color: rgb(248, 239, 197);*/
+
+
+.london-backgroundcolor>img {
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    right: 20px;
+    top: 135px;
+}
+
+input[type=nick],
+input[type=birth],
+input[type=sex],
+input[type=account] {
+    width: 80%;
+    padding: 8px 12px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.london-backgroundcolor>h3,
+.paris-backgroundcolor>h3,
+.tokyo-backgroundcolor>h3,
+.profile-backgroundcolor>h3,
+.password-backgroundcolor>h3 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.london-backgroundcolor>h3 {
+    margin-bottom: 70px;
+}
+
+.profile-backgroundcolor>h3 {
+    margin-bottom: 60px;
+}
+
+.london-backgroundcolor>p>span {
+    font-weight: bold;
+}
+
+
+.london-backgroundcolor>p {
+    position: relative;
+    line-height: 35px;
+}
+
+.london-backgroundcolor>p::after {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    content: '';
+    width: 750px;
+    height: 1px;
+    border-radius: 20px;
+    background-color: rgb(185, 185, 185);
+}
+
+.buttontwice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.buttontwice-1,
+.buttontwice-2 {
+    text-align: center;
+    width: 22%;
+}
+
+
+.changeprofile,
+.changepassword,
+.confirm-profile,
+.confirm-password {
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #d1c9c2;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.changeprofile:hover,
+.changepassword:hover,
+.confirm-profile:hover,
+.confirm-password:hover {
+    background-color: #b3a395;
+    opacity: 0.8;
+}
+
+.changeprofile:active,
+.changepassword:active,
+.confirm-profile:active,
+.confirm-password:active {
+    background-color: #b3a395;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.tabcontent>h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.buttontwice-3 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.buttontwice-4 {
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Paris-消費紀錄---------------------------------------------------------------------------------------------------------------------------*/
+.paris-backgroundcolor {
+    position: relative;
+    width: auto;
+    height: 100%;
+    border-radius: 60px;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.purchased {
+    background-color: #dbdbdbcc;
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.purchased>p {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    position: relative;
+}
+
+.purchased-top,
+.purchased-list {
+    display: flex;
+    position: relative;
+    padding: 10px 30px 10px 30px;
+}
+
+.purchased>p::after,
+.purchased-top::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background-color: rgba(128, 128, 128, 0.507);
+    top: 50px;
+    left: 0;
+}
+
+.purchased-bottom::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background-color: rgba(128, 128, 128, 0.507);
+    top: 0;
+    left: 0;
+}
+
+.purchased-number {
+    width: 85%;
+}
+
+.purchased-finished {
+    width: 15%;
+    text-align: center;
+}
+
+.purchased-finished>p {
+    padding: 2px 0px 2px 0px;
+    color: honeydew;
+    background-color: rgb(69, 75, 87);
+    border-radius: 20px;
+}
+
+.purchased-list-l {
+    width: 70%;
+    text-align: left;
+}
+
+.purchased-list-mid {
+    width: 15%;
+    text-align: left;
+}
+
+.purchased-list-r {
+    width: 15%;
+    text-align: center;
+}
+
+.purchased-list-l>p,
+.purchased-list-mid>p,
+.purchased-list-r>p {
+    line-height: 40px;
+}
+
+.purchased-bottom {
+    position: relative;
+    padding: 10px 30px 10px 30px;
+    line-height: 35px;
+}
+
+.purchased-bottom>p,
+.purchased-number>p,
+.purchased>p {
+    font-weight: bold;
+}
+
+.purchased-bottom>p>span {
+    font-weight: normal;
+}
+
+.purchased-end {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    font-weight: bolder;
+}
+
+
+/*Tokyo-評論紀錄---------------------------------------------------------------------------------------------------------------------------*/
+.tokyo-backgroundcolor {
+    position: relative;
+    width: auto;
+    height: 100%;
+    border-radius: 60px;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.review {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    /*background-color: #e2d9d3;*/
+    position: relative;
+}
+
+.review::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #e2d9d3;
+    top: 88px;
+    left: 0;
+}
+
+.star::before {
+    content: "★";
+    color: rgb(255, 230, 0);
+    font-size: 18px;
+}
+
+.sstar::before {
+    content: "★";
+    color: rgba(27, 27, 26, 0.795);
+    font-size: 18px;
+}
+
+/*使用者照片*/
+.userpic2 img {
+    border-radius: 50%;
+    margin-right: 10px;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+
+/*留言區照片位置*/
+.user {
+    display: block;
+    margin-right: 10px;
+}
+
+.wordss {
+    font-size: 18px;
+}
+
+.time {
+    float: right;
+    font-size: 15px;
+    color: rgb(100, 100, 99);
+}
+
+
+/*評論區不會動的星*/
+.allstars {
+    display: block;
+    width: 100%;
+
+}
+
+.stars::before {
+    content: "★";
+    color: rgba(236, 215, 22, 0.904);
+    font-size: 35px;
+}
+
+.sstars::before {
+    content: "★";
+    color: rgba(27, 27, 26, 0.795);
+    font-size: 35px;
+}
+
+.sstarsright {
+
+    margin-left: 70px;
+}
+
+
+
+/*==================================================================================================================================*/
+/*登入/註冊----------------------------------------------------------------------------------*/
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* 動態廣告 ----------------------------------------------------*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+
+    .text {
+        font-size: 11px
+    }
+}
+
+/*購物車拉開*/
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

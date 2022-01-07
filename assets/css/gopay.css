@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Comic Sans MS";
+    letter-spacing: 1.85px;
+}
+
+body {
+    background-image: url(../img/order.jpg);
+    /*background-color: #e2d9d3;*/
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: #ffffff;
+    letter-spacing: 1.8px;
+    transition: ease-in-out 0.4s;
+    box-shadow: rgb(138, 137, 137) 5px 5px 15px;
+}
+
+
+
+/*---向下箭頭---------------------------------------------
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: auto;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.chevron {
+    position: absolute;
+    width: 2.5rem;
+    height: 0.5rem;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+
+}
+
+.chevron:first-child {
+    animation: move-chevron 2s ease-out 2s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move-chevron 2s ease-out 3s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #ffe600;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(4rem) scale(0.7);
+    }
+}*/
+
+
+
+
+
+/*重要! 固定目錄下方物件高度 ----------------------------------------------------------------------------------------------------*/
+.expect-header-height {
+    display: block;
+    width: 1500px;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: rgb(155, 155, 155) 0px 5px 15px;
+}
+
+/*前往結帳-------------------------------------------------------------------------------------------------*/
+.expect-header-height>h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.sop-circle1,
+.sop-circle2,
+.sop-circle3 {
+    position: relative;
+    background-color: rgb(235, 194, 108);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 70px 150px 70px 150px;
+    transition: .3s;
+    border: rgb(235, 194, 108);
+    border-style: solid;
+}
+
+.sop-circle1>p,
+.sop-circle2>p,
+.sop-circle3>p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    transition: .3s;
+}
+
+.sop-circle1>p:hover,
+.sop-circle2>p:hover,
+.sop-circle3>p:hover {
+    color: rgb(235, 194, 108);
+}
+
+.sop-circle1:hover,
+.sop-circle2:hover,
+.sop-circle3:hover {
+    background-color: white;
+    color: rgb(235, 194, 108);
+}
+
+
+.sop-circle1>.sop-word,
+.sop-circle3>.sop-word {
+    color: rgb(107, 107, 107);
+    font-size: 18px;
+    width: 150px;
+    margin: 20px 0px 0px -14px;
+}
+
+.sop-circle2>.sop-word {
+    color: rgb(107, 107, 107);
+    font-size: 18px;
+    width: 150px;
+    margin: 20px 0px 0px -44px;
+}
+
+
+.sop-circle1::after,
+.sop-circle2::after {
+    position: absolute;
+    content: '';
+    background-color: rgb(56, 58, 78);
+    height: 2px;
+    width: 320px;
+    top: 22px;
+    left: 47px;
+}
+
+.your-order {
+    margin: auto;
+    width: 1300px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #afa2968a;
+    border-radius: 10px;
+}
+
+.your-order-top,
+.your-order-top-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.your-order-top::after,
+.your-order-top-2::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 1200px;
+    background-color: rgb(0, 0, 0);
+    top: 50px;
+}
+
+.your-order-top>p {
+    font-size: 22px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.your-order-top>img {
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;
+
+}
+
+.your-order-top-2>span {
+    font-size: 22px;
+    margin: 10px 250px 10px 250px;
+    font-weight: bold;
+}
+
+.your-order-top-2>p {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+    margin: 10px 75px 10px 75px;
+    font-weight: bold;
+}
+
+.your-order-middle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.order>img {
+    margin-left: 75px;
+    width: 150px;
+}
+
+.order>span {
+    text-align: center;
+    font-size: 20px;
+    width: 320px;
+}
+
+.order>p {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+    margin: 10px 70px 10px 86px;
+}
+
+.your-order-botton {
+    margin: auto;
+    width: 1300px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #afa2968a;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.your-order-botton-top {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.your-order-botton-top::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 1200px;
+    background-color: rgb(0, 0, 0);
+    top: 35px;
+}
+
+.your-order-botton-top>p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.your-order-check {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.your-order-check-left,
+.your-order-check-right {
+    width: 25%;
+
+}
+
+.your-order-check-left>p,
+.your-order-check-right>p {
+    position: relative;
+    font-size: 20px;
+    line-height: 150px;
+    font-weight: 550;
+}
+
+.your-order-check-right>p {
+    text-align: center;
+    padding-left: 100px;
+    font-weight: normal;
+}
+
+.your-order-check-left>span {
+    position: absolute;
+    margin-top: -25px;
+    color: rgb(138, 138, 138);
+}
+
+.your-order-check-left>span::after {
+    position: absolute;
+    content: '';
+    background-color: rgba(138, 138, 138, 0.61);
+    width: 550px;
+    height: 1px;
+    top: 42px;
+    left: 0px;
+}
+
+.your-order-check-right-2 {
+    display: block;
+    position: relative;
+    width: 50%;
+}
+
+.your-order-check-adress>p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 29.5px;
+}
+
+.your-order-check-adress>input[type=paymentaddress] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px 10px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.your-order-check-remark>p,
+.your-order-check-payment>p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.your-order-check-remark>textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    color: gray;
+    border-color: rgba(128, 128, 128, 0.548);
+    font-size: 16px;
+}
+
+.your-order-check-payment>p>span {
+    font-size: 18px;
+    color: rgb(199, 83, 83);
+}
+
+.your-order-check-payment>select {
+    border-color: rgb(150, 150, 150);
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: gray;
+    height: 35px;
+    padding: 5px 5px 5px 5px;
+}
+
+/*.your-order-check-payment-final {
+    display: table;
+    border-radius: 10px;
+    background-color: #ceb2a2;
+    border-style: solid ;
+    border-color: #cab4a3;
+    color: #534840;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+    float: right;
+  }*/
+
+
+.your-order-check-payment-final {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    display: table;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2px;
+    background-color: rgb(235, 194, 108);
+    border-color: rgb(235, 194, 108);
+    color: #ffffff;
+}
+
+.your-order-check-payment-final>span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.your-order-check-payment-final>span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 3px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.your-order-check-payment-final:hover {
+
+    background-color: #ffffff;
+    border-color: rgb(235, 194, 108);
+}
+
+.your-order-check-payment-final:hover span {
+    padding-right: 25px;
+    color: rgb(235, 194, 108);
+}
+
+.your-order-check-payment-final:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+/*登入/註冊----------------------------------------------------------------------------------*/
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/*購物車拉開*/
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

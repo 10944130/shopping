@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Comic Sans MS";
+}
+
+body {
+  background: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax {
+  /* 設定背景圖片/居中/不重覆 */
+  background: url("../img/dynamic_ad1.jpg") no-repeat;
+  /* 設定區塊高度 */
+  min-height: 350px;
+  /* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+}
+.parallax2 {
+  /* 設定背景圖片/居中/不重覆 */
+  background: url("../img/bbb3.png") no-repeat;
+  /* 設定區塊高度 */
+  min-height: 350px;
+  /* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+}
+.parallax3 {
+  /* 設定背景圖片/居中/不重覆 */
+  background: url("../img/dy2.jpg") no-repeat;
+  /* 設定區塊高度 */
+  min-height: 350px;
+  /* 背景自動縮放/固定 */
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+}
+
+/*全部*/
+.all {
+  display: flex;
+  margin: auto;
+  padding: 120px 0 0px 0px;
+  width: 1500px;
+
+}
+
+
+/*側邊_---------------------------------------------------- */
+/*搜尋按鈕*/
+.topnav {
+  display: flex;
+  padding-bottom: 20px;
+
+}
+
+.topnav a {
+
+  color: black;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+
+.topnav input[type=text] {
+  display: flex;
+  padding: 6px;
+  width: 120px;
+  margin: 0px 5px 0 0;
+  font-size: 17px;
+  border: none;
+  transition: .4s;
+}
+
+
+.topnav input[type=text]:hover {
+  width: 150px;
+  margin: 0px 5px 0 0;
+}
+
+.topnav .search-container button {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.search-container img {
+  margin: 3px 0 0 5px;
+  width: 30px;
+}
+
+.topnav .search-container button:hover {
+  transition: all.4s;
+  transform: scale(1.15, 1.15);
+}
+
+/*左選單*/
+.list1 {
+  width: 20%;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+  display: block;
+  list-style: none;
+}
+
+.fixed-list1 {
+  /*background-color: rgba(228, 217, 217, 0.493);*/
+  background: url("../img/back8.jpg")no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  background-position: bottom;
+  position: fixed;
+  width: 230px;
+  margin: auto;
+  box-shadow: rgb(138, 137, 137) 5px 5px 15px;
+  padding-bottom: 49px;
+}
+
+.list1 ul li {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.list1 ul li a {
+  text-decoration: none;
+  color: rgb(134, 89, 89);
+  transition: .4s;
+}
+
+/*側目錄 hover顏色------------------------------------*/
+.list1 ul li #candle:hover,
+.list1 ul li #Oil:hover,
+.list1 ul li #bottle:hover {
+  color: white;
+  padding: 4px 5px 4px 5px;
+  border-radius: 10px;
+  /*border-bottom: solid rgb(134, 89, 89) 3px;*/
+}
+
+.list1 ul li #candle:hover {
+  background-color: #dac5c5;
+}
+
+.list1 ul li #Oil:hover {
+  background-color: #eddfa5;
+}
+
+.list1 ul li #bottle:hover {
+  background-color: #c4afa2;
+}
+
+/*------------------------------------*/
+
+
+.list1 li {
+  padding: 5px 0 5px 0px;
+}
+
+.big {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 20px 0 5px 0;
+
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 50px 0 10px 0;
+}
+
+/*圖片*/
+/* Add shadows to create the "card" effect */
+/*
+.card {
+transition: 0.3s;
+max-width:33%;
+text-align: center;
+}
+*/
+.card {
+  max-width: 28%;
+  padding: 10px 10px 20px 10px;
+  margin: 20px 20px 30px 20px;
+  text-align: center;
+  background-color: white;
+
+}
+
+.card img {
+  width: 100%;
+  transition: .4s;
+  transform: scale(1, 1);
+  margin-bottom: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card img:hover {
+  /*opacity: 0.5;*/
+  /*box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2)*/
+  transform: scale(1.15, 1.15);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+/**/
+.oil {
+  display: block;
+  width: 80%;
+}
+
+.oiltop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.bigword {
+  text-align: center;
+  font-size: 100px;
+}
+
+.flowerword {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.575);
+  text-align: center;
+  width: 400px;
+  height: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:100px 0 0 400px;
+}
+
+.flowertitle {
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+h1 {
+  width: 100%;
+}

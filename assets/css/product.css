@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Comic Sans MS";
+}
+
+body {
+    background: url("../img/back7.jpg")no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+
+}
+
+.all {
+    width: 1300px;
+    margin: auto;
+    padding: 100px 0px 0px 0px;
+
+}
+
+/*上端區域-------------------------------------------------------------*/
+.topall {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.705);
+    margin-top: 40px;
+    padding: 40px 40px 40px 40px;
+}
+
+/*上左照片*/
+.pict {
+    display: block;
+    width: 45%;
+}
+
+.hover {
+    width: 500px;
+    height: 500px;
+}
+
+.hover img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 0px;
+    border-radius: 10px;
+    transition: 1s;
+   
+}
+
+.hover img:nth-of-type(2):hover {
+    opacity: 0;
+}
+
+/*商品右----------------------------------------------------------------*/
+.some {
+    display: block;
+    width: 55%;
+
+    margin-left: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+/*數量鍵跟加入購物車*/
+
+.numandcar {
+    display: flex;
+    margin: 10px 0 20px 0;
+
+}
+
+/*數量全*/
+.numbottom {
+    width: 160px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    background-color: white;
+}
+
+/*=-符號*/
+.buttomstyle {
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/*中間數字*/
+.centernum {
+    border: none;
+    padding: 0px 25px 0px 25px;
+   
+
+}
+
+/*加入購物車*/
+.cartbuttom {
+    margin-left: 30px;
+    width: 73%;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.cartbuttom:hover {
+    background-color: rgb(230, 230, 225);
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+/*介紹*/
+.introduce {
+    font-size: 15px;
+    height: 35px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.productname {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.eproductname {
+    font-size: 20px;
+}
+
+hr {
+    height: 2px;
+    background-color: #afafaf8c;
+    border: none;
+}
+
+
+/*下方全--------------------------------------------------------------*/
+.bottomall {
+    display: flex;
+    margin: 1300px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+/*all  左方評論區*/
+.comment {
+    width: 50%;
+    display: flex;
+}
+
+/*用戶大字*/
+.words {
+    font-size: 40px;
+
+}
+
+/*會亮的星星*/
+.starlocate {
+    display: block;
+    float: left;
+
+}
+
+.rating label {
+    cursor: pointer;
+    float: right;
+}
+
+.rating label:nth-of-type(5):after {
+    animation-delay: 0.25s;
+}
+
+.rating label:nth-of-type(4):after {
+    animation-delay: 0.2s;
+}
+
+.rating label:nth-of-type(3):after {
+    animation-delay: 0.15s;
+}
+
+.rating label:nth-of-type(2):after {
+    animation-delay: 0.1s;
+}
+
+.rating label:nth-of-type(1):after {
+    animation-delay: 0.05s;
+}
+
+.rating label::after {
+    transition: all 0.4s ease-out;
+    -webkit-font-smoothing: antialiased;
+    content: "★";
+    color: rgba(167, 165, 161, 0.411);
+    width: 100%;
+    font-size: 40px;
+    animation: 1s pulse ease;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating input:checked+label:after,
+.rating input:checked~label:after {
+    content: "★";
+    color: #ffdf50;
+}
+
+/*評論盒子*/
+.commentarea {
+    display: block;
+}
+
+textarea {
+    width: 600px;
+    height: 200px;
+    padding: 5px 0 0 5px;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+}
+
+textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*評論按鈕*/
+.myBtn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 30px;
+
+}
+
+.myBtn:hover {
+    background-color: rgb(230, 230, 225);
+    color: rgb(5, 5, 5);
+    transition: 0.5s;
+}
+
+
+/*右下留言區-------------------------------------------------------------------------------*/
+
+.reviewall {
+    display: block;
+    width: 50%;
+
+}
+
+.review {
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    background-color: #e2d9d3;
+    width: 600px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.star::before {
+    content: "★";
+    color: rgba(236, 215, 22, 0.904);
+    font-size: 18px;
+}
+
+.sstar::before {
+    content: "★";
+    color: rgba(27, 27, 26, 0.795);
+    font-size: 18px;
+}
+
+/*使用者照片*/
+.userpic2 img {
+    border-radius: 50%;
+    margin-right: 10px;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+
+/*留言區照片位置*/
+.user {
+    display: block;
+    margin-right: 10px;
+}
+
+.wordss {
+    font-size: 15px;
+}
+
+.time {
+    float: right;
+    font-size: 15px;
+    color: rgb(100, 100, 99);
+}
+
+
+/*評論區不會動的星*/
+.allstars {
+    display: block;
+    width: 100%;
+
+}
+
+.stars::before {
+    content: "★";
+    color: rgba(236, 215, 22, 0.904);
+    font-size: 35px;
+}
+
+.sstars::before {
+    content: "★";
+    color: rgba(27, 27, 26, 0.795);
+    font-size: 35px;
+}
+
+.sstarsright {
+
+    margin-left: 70px;
+}
+
+/*案牛*/
+.producemore {
+    display: block;
+}
+
+.tablink {
+    position: relative;
+    background-color: rgba(185, 131, 131, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 23%;
+    transition: .5s;
+}
+
+.tablink::after {
+    position: absolute;
+    content: '';
+    width: 350px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    top: 51px;
+    left: 0px;
+
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 80px 5px 0 0;
+
+}
