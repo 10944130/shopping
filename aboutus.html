@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aboutus.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="navbarclass">
+            <div class="home-0"><a href="./index.html">Fragrance.Home</a></div>
+            <div class="menu-0">
+                <ul>
+                    <li>
+                        <a href="./All_Product.html">ALL</a>
+                        <div class="undercolor1"></div>
+                    </li>
+                    <li>
+                        <a href="./Fragrance_Note.html">NOTES</a>
+                        <div class="undercolor2"></div>
+                        <ul>
+                            <li>
+                                <div class="color-1"></div>
+                                <div class="fragrance-1">Floral Notes 花香調</div>
+                            </li>
+                            <li>
+                                <div class="color-2"></div>
+                                <div class="fragrance-2">Fruity Notes 果香調</div>
+                            </li>
+                            <li>
+                                <div class="color-3"></div>
+                                <div class="fragrance-3">Woody Notes 木質調</div>
+                            </li>
+                            <li>
+                                <div class="color-4"></div>
+                                <div class="fragrance-4">Gourmand Notes 美食調</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">ABOUT US</a>
+                        <div class="undercolor3"></div>
+                    </li>
+                    <li>
+                        <a href="./member.html">MEMBER</a>
+                        <div class="undercolor4"></div>
+                    </li>
+                </ul>
+                <div class="hard1-car-shop">
+                    <div class="hard1">
+                        <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Log In<div class="undercolor5"></div></button>
+                    </div>|
+                    <div class="menu-1">
+                        <a href=" ">Sign out</a>
+                        <div class="undercolor6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+                </span>
+            </div>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class=from-all>
+
+
+                        <div id="from-all-1">
+                            <div class="login">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1 onclick="show_hide()">Log In</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>使用者名稱 或 電子信箱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>登入</button>
+
+                                    <div class="rememberme">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> 記住我
+                                        </label>
+                                    </div>
+                                    <h2 onclick="show_hide()">~<br>Sign up<br>~</h2>
+
+                                    <div class="container">
+                                        <div class="chevron"></div>
+                                        <div class="chevron"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="from-all-2">
+                            <div class="signup">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1>Sign up</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>使用者名稱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="email"><b>電子信箱</b></label>
+                                    <input type="email" placeholder="example@mail.com" name="newemail" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>註冊</button>
+
+                                    <div class="rememberme">
+                                        💜🤍🧡
+                                    </div>
+                                    <p onclick="show_hide()">~ Back ~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>MY CART</p>
+        <div class="car-list">
+            <ul>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle1.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>玫瑰香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle11.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>肉桂橘子<br>香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/oil6.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>佛手柑精油</h1>
+                            <p>&times; 1</p>
+                            <span>$ 350</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/Ess3.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>薰衣草擴香瓶</h1>
+                            <p>&times; 2</p>
+                            <span>$ 500</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="gobuy">
+            <p>商品總計</p><span>NT$1750</span><br>
+            <div class=gobuy-click><a href="./gopay.html">前往結帳</a></div>
+        </div>
+    </div>
+
+
+
+    <div class="allabout">
+        <div class="toptitle">~ Group photo ~</div>
+        <div class="usspic">
+            <div class="mySlides fade">
+                <img src="./assets/img/allmenber2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./assets/img/allmenber.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./assets/img/allmenber3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./assets/img/allmenber4.jpg" style="width:100%">
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="toptitle">~ Brand Story ~</div>
+        <div class="bstoryall">
+            <div class="bstoryword">
+
+                <p>❝ 活中不可缺少的香氛，可讓人改變心情以及舒壓。<br>
+                    每個人也都有屬於自己的香氛，特調的、獨一無二的。<br>
+                    所以我們利用密室的構想，當作每個人在裡面為自己調配的香氛場所，<br>
+                    秘方只有自己知道、裡面發生的任何事，都只有當事人知道。<br>
+                    他們所到之處都留有香味的痕跡，淡淡地，彷彿不曾來過，卻又保有一絲存在感，<br>讓人無法忽視。 ❞</p>
+            </div>
+            <div class="bstorypic"><img src="./assets/img/allmenber5.jpg"></div>
+        </div>
+
+
+        <div class="toptitle">~ About us ~</div>
+        <div class="usall">
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front"><img src="./assets/img/menberr1.jpg">
+
+                    </div>
+                    <div class="flip-box-back">
+                        <p>為了讓組員寫的漂亮網頁動起來，我們苦惱了很久，光是一個註冊登入就花上好幾天的時間，程式錯誤的頁面都看到快崩潰了，為了讓他成功也熬了，好幾個夜晚，但也因為不斷的修改，所以感受到了我程式能力的成長，覺得獲益良多!
+                        </p>
+                    </div>
+                </div>
+                <span class="uswords"><b>鄧如芳<br></b></span>
+                <a href="https://www.instagram.com/tou_1219/">
+                    <div class="igpic"><img src="./assets/img/ig.png"></div>
+                </a>
+                <div class="uswords2">中原大學資管系 二年乙班<br>網站後端資料庫人員</div>
+            </div>
+
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front"><img src="./assets/img/menberr2.jpg">
+
+                    </div>
+                    <div class="flip-box-back2">
+                        <p>這次的專題展非常的趕，我們最後一個禮拜幾乎都是沒睡覺都狀態，整天抱著筆電不斷的寫、不斷的改…..QQ有時候甚至花了好幾個小時才把一個錯誤debug掉。
+                            不過我的組員們都很認真，也很願意參與任何討論，在討論過程中我們都是和平的，所以我們是個很讚的團隊!</p>
+                    </div>
+                </div>
+                <span class="uswords"><b>謝庭芝<br></b></span>
+                <a href="https://www.instagram.com/ting._.0413/">
+                    <div class="igpic"><img src="./assets/img/ig.png"></div>
+                </a>
+                <div class="uswords2">中原大學資管系 二年乙班<br>網站後端資料庫人員</div>
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front"><img src="./assets/img/menberr3.jpg">
+
+                    </div>
+                    <div class="flip-box-back3">
+                        <p>一開始看到專題內容，一度以為是無法完成的事，但歷經三個禮拜的陣痛期後，從零到現在的模樣真的不可思議，雖然現在還有點可惜沒用上的css轉場特效，還有如果將js融會貫通，就可以做的更豐富。這段期間很感謝我的組員們!深刻體會團隊合作、溝通的重要性，大家都有磨合期與互相包容，真的很喜歡這個團隊😍!
+                        </p>
+                    </div>
+                </div>
+
+                <span class="uswords"><b>應賢霈<br></b></span>
+                <a href="https://www.instagram.com/lsabelpei/">
+                    <div class="igpic"><img src="./assets/img/ig.png"></div>
+                </a>
+                <div class="uswords2">中原大學資管系 二年甲班<br>網站前端設計人員</div>
+
+            </div>
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front"><img src="./assets/img/menbers4.jpg">
+
+                    </div>
+                    <div class="flip-box-back4">
+                        <p>為了在網站上呈現出想要的效果，在撰寫HTML、CSS、Javascript時遇到很多想不透的問題，但在善用網路資訊、請教助教之下也順利完成此專案。整個網站從排版到特效，每個都考驗我們的想像跟創意，過程中學習到許多程式上的邏輯思考與團隊合作。
+                        </p>
+                    </div>
+                </div>
+                <span class="uswords"><b>江詠媛<br></b></span>
+                <a href="https://www.instagram.com/yung_yuan0331/">
+                    <div class="igpic"><img src="./assets/img/ig.png"></div>
+                </a>
+                <div class="uswords2">中原大學資管系 二年甲班
+                    <br>網站前端設計人員
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="toptitle">~ Contact us ~</div>
+        <div class="contactall">
+            <div class="writeus">
+                <div class="toptitle1">Write Us</div>
+                <form class="writeform">
+                    <div class="writspace">
+                        <p>Name</p><input class="writetext" type="text" placeholder="Your name...">
+                    </div>
+                    <div class="writspace">
+                        <p>E-mail</p><input class="writetext" type="text" placeholder="xxxxxxxx@gmail.com">
+                    </div>
+                    <div class="writspace">
+                        <p>TeL</p><input class="writetext" type="text" placeholder="09xxxxxxxx">
+                    </div>
+                    <p>contents</p>
+                    <textarea name="mytext" class="writetext" placeholder="Thank you for your feedback."></textarea>
+                    <p><a href="mailto:jennifer900331@yahoo.com.tw" class="mail"><img src="./assets/img/email.png"> </a>
+                    </p>
+                </form>
+
+            </div>
+            <div class="contactimfor">
+
+                <p>
+                <div class="toptitle1">Imformation</div>
+                </p>
+                <div class="imfor">
+                    <div class="imformation">
+                        感謝您造訪 香氛密室官網<br>
+                        若您有任何的意見或疑問，歡迎留下相關內容，我們將盡快為您服務，<br>
+                        客服相關資訊如下:</div>
+
+                    <div class="threeimfor">
+                        <p>服務時間:12:00am ~ 05:00pm</p>
+                        <p>客服信箱:service@1010apothecary.com.tw</p>
+                        <p>合作連絡事宜:wholasole.clim.com.tw</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.256606538632!2d121.2385877155304!3d24.9573826840083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2z5Lit5Y6f5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1641178639195!5m2!1szh-TW!2stw"
+                        width="620" height="477" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-all">
+
+            <div class="footer-up">
+                <div class="footer-1">
+                    <h1>香氛密室 <span> Fragrance.Home</span></h1>
+                    <h2>服務時間</h2>
+                    <p>周一至周五 早上10:00至下午5:00</p>
+                </div>
+                <div class="footer-2">
+                    <h2>聯絡我們</h2>
+                    <P>Tel : 0912345678 || <span> IG : <a href="https://www.instagram.com/cycuim/">cycuim</a></span> ||
+                        <span> FB : <a href="https://www.facebook.com/groups/196334640403577">CYCU_IM</a> </span>
+                    </P>
+                </div>
+                <div class="footer-3">
+                    <h2>ABOUT</h2>
+                    <span><a href="./Fragrance_Note.html">所有商品↗ <span> | </span></a></span> <span><a
+                            href="./aboutus.html"> 關於我們↗ </a></span>
+                </div>
+            </div>
+
+            <div class="footer-down">
+                <span>網頁瀏覽人數:100人</span>
+                <p>Copyright@2021 By - Pei Ying, Jenny, Ru Fang, Ting Jhih - All Rights Reseved</p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/aboutus.js"></script>
+
+</body>
+
+</html>

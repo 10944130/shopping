@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/gopay.css">
+<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+<style> </style>
+
+<body>
+    <header>
+        <div id="navbar" class="navbarclass">
+            <div class="home-0"><a href="./index.html">Fragrance.Home</a></div>
+            <div class="menu-0">
+                <ul>
+                    <li>
+                        <a href="./All_Product.html">ALL</a>
+                        <div class="undercolor1"></div>
+                    </li>
+                    <li>
+                        <a href="./Fragrance_Note.html">NOTES</a>
+                        <div class="undercolor2"></div>
+                        <ul>
+                            <li>
+                                <div class="color-1"></div>
+                                <div class="fragrance-1">Floral Notes 花香調</div>
+                            </li>
+                            <li>
+                                <div class="color-2"></div>
+                                <div class="fragrance-2">Fruity Notes 果香調</div>
+                            </li>
+                            <li>
+                                <div class="color-3"></div>
+                                <div class="fragrance-3">Woody Notes 木質調</div>
+                            </li>
+                            <li>
+                                <div class="color-4"></div>
+                                <div class="fragrance-4">Gourmand Notes 美食調</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">ABOUT US</a>
+                        <div class="undercolor3"></div>
+                    </li>
+                    <li>
+                        <a href="./member.html">MEMBER</a>
+                        <div class="undercolor4"></div>
+                    </li>
+                </ul>
+                <div class="hard1-car-shop">
+                    <div class="hard1">
+                        <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Log In<div class="undercolor5"></div></button>
+                    </div>|
+                    <div class="menu-1">
+                        <a href=" ">Sign out</a>
+                        <div class="undercolor6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+                </span>
+            </div>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class=from-all>
+
+
+                        <div id="from-all-1">
+                            <div class="login">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1 onclick="show_hide()">Log In</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>電子信箱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>登入</button>
+
+                                    <div class="rememberme">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> 記住我
+                                        </label>
+                                    </div>
+                                    <h2 onclick="show_hide()">~<br>Sign up<br>~</h2>
+
+                                    <div class="container">
+                                        <div class="chevron"></div>
+                                        <div class="chevron"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="from-all-2">
+                            <div class="signup">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1>Sign up</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>使用者名稱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="email"><b>電子信箱</b></label>
+                                    <input type="email" placeholder="example@mail.com" name="newemail" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>註冊</button>
+
+                                    <div class="rememberme">
+                                        💜🤍🧡
+                                    </div>
+                                    <p onclick="show_hide()">~ Back ~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>MY CART</p>
+        <div class="car-list">
+            <ul>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle1.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>玫瑰香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle11.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>肉桂橘子<br>香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/oil6.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>佛手柑精油</h1>
+                            <p>&times; 1</p>
+                            <span>$ 350</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/Ess3.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>薰衣草擴香瓶</h1>
+                            <p>&times; 2</p>
+                            <span>$ 500</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="gobuy">
+            <p>商品總計</p><span>NT$1750</span><br>
+            <div class=gobuy-click><a href="./gopay.html">前往結帳</a></div>
+        </div>
+    </div>
+
+    <div class="expect-header-height">
+        <h1>確認訂單</h1>
+        <div class="sop">
+            <div class="sop-circle1">
+                <p>1</p>
+                <div class="sop-word">選擇商品</div>
+            </div>
+            <div class="sop-circle2">
+                <p>2</p>
+                <div class="sop-word">填寫地址與付款</div>
+            </div>
+            <div class="sop-circle3">
+                <p>3</p>
+                <div class="sop-word">確認付款</div>
+            </div>
+        </div>
+
+        <div class="your-order">
+            <div class="your-order-top"><img src="./assets/img/shop.png">
+                <p>訂單詳情</p>
+            </div>
+            <div class="your-order-top-2"><span>商品</span>
+                <p>單價</p>
+                <p>數量</p>
+                <p>訂單金額</p>
+            </div>
+            <div class="your-order-middle">
+                <div class=order>
+                    <img src="./assets/img/candle1.jpg">
+                    <span>玫瑰香氛蠟燭</span>
+                    <p>&times;1</p>
+                    <p>$450</p>
+                    <p>$450</p>
+                </div>
+                <div class=order>
+                    <img src="./assets/img/candle11.jpg">
+                    <span>肉桂橘子香氛蠟燭</span>
+                    <p>&times;1</p>
+                    <p>$450</p>
+                    <p>$450</p>
+                </div>
+                <div class=order>
+                    <img src="./assets/img/oil6.jpg">
+                    <span>佛手柑精油</span>
+                    <p>&times;1</p>
+                    <p>$350</p>
+                    <p>$350</p>
+                </div>
+                <div class=order>
+                    <img src="./assets/img/Ess3.jpg">
+                    <span>薰衣草擴香瓶</span>
+                    <p>&times;2</p>
+                    <p>$500</p>
+                    <p>$1000</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="your-order-botton">
+            <div class="your-order-botton-top">
+                <p>付款明細</p>
+            </div>
+
+            <div class="your-order-check">
+                <div class="your-order-check-left">
+                    <p>商品總計</p>
+                    <p>運費總計</p>
+                    <span>(實際運費金額以購物車或是到貨時收取的金額為準。)</span>
+                    <p>結帳總金額</p>
+                </div>
+                <div class="your-order-check-right">
+                    <p>$2250</p>
+                    <p>$60</p>
+                    <p>$2310</p>
+                </div>
+                <div class="your-order-check-right-2">
+                    <div class="your-order-check-adress">
+                        <p>收件地址</p>
+                        <input type="paymentaddress" placeholder="請輸入收件地址。">
+                    </div>
+                    <div class="your-order-check-remark">
+                        <p>給我們的訊息或注意事項</p>
+                        <textarea maxlength="150">
+                            Hi~有甚麼想對我們說的嗎? / 備註
+                        </textarea>
+                    </div>
+                    <div class="your-order-check-payment">
+                        <p>付款方式 <span> *僅提供宅配到府</span></p>
+                        <select>
+                            <option>7-11 ibon 代碼繳費</option>
+                            <option>全家 FamiPort 代碼繳費</option>
+                            <option>ATM 轉帳繳費</option>
+                            <option>貨到付款</option>
+                            <option>悠游付</option>
+                        </select>
+                    </div>
+                    
+                    <a href="./index.html">
+                        <button class="your-order-check-payment-final"
+                        style="vertical-align:middle" onclick="alert('感謝您的訂購! 已送出訂單。')">
+                        <span>完成訂單</span>
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-all">
+
+            <div class="footer-up">
+                <div class="footer-1">
+                    <h1>香氛密室 <span> Fragrance.Home</span></h1>
+                    <h2>服務時間</h2>
+                    <p>周一至周五 早上10:00至下午5:00</p>
+                </div>
+                <div class="footer-2">
+                    <h2>聯絡我們</h2>
+                    <P>Tel : 0912345678 || <span> IG : <a href="https://www.instagram.com/cycuim/">cycuim</a></span> ||
+                        <span> FB : <a href="https://www.facebook.com/groups/196334640403577">CYCU_IM</a> </span>
+                    </P>
+                </div>
+                <div class="footer-3">
+                    <h2>ABOUT</h2>
+                    <span><a href="./Fragrance_Note.html">所有商品↗ <span> | </span></a></span> <span><a
+                            href="./aboutus.html"> 關於我們↗ </a></span>
+                </div>
+            </div>
+
+            <div class="footer-down">
+                <span>網頁瀏覽人數:100人</span>
+                <p>Copyright@2021 By - Pei Ying, Jenny, Ru Fang, Ting Jhih - All Rights Reseved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/gopay.js"></script>
+</body>
+
+</html>

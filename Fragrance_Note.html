@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/Fragrance_Note.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/top.css">
+</head>
+
+<body>
+
+  <header>
+    <div id="navbar" class="navbarclass">
+      <div class="home-0"><a href="./index.html">Fragrance.Home</a></div>
+      <div class="menu-0">
+        <ul>
+          <li>
+            <a href="./All_Product.html">ALL</a>
+            <div class="undercolor1"></div>
+          </li>
+          <li>
+            <a href="./Fragrance_Note.html">NOTES</a>
+            <div class="undercolor2"></div>
+            <ul>
+              <li>
+                <div class="color-1"></div>
+                <div class="fragrance-1">Floral Notes 花香調</div>
+              </li>
+              <li>
+                <div class="color-2"></div>
+                <div class="fragrance-2">Fruity Notes 果香調</div>
+              </li>
+              <li>
+                <div class="color-3"></div>
+                <div class="fragrance-3">Woody Notes 木質調</div>
+              </li>
+              <li>
+                <div class="color-4"></div>
+                <div class="fragrance-4">Gourmand Notes 美食調</div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./aboutus.html">ABOUT US</a>
+            <div class="undercolor3"></div>
+          </li>
+          <li>
+            <a href="./member.html">MEMBER</a>
+            <div class="undercolor4"></div>
+          </li>
+        </ul>
+        <div class="hard1-car-shop">
+          <div class="hard1">
+            <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+              style="width:auto;">Log In<div class="undercolor5"></div></button>
+          </div>|
+          <div class="menu-1">
+            <a href=" ">Sign out</a>
+            <div class="undercolor6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+          <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+        </span>
+      </div>
+
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class=from-all>
+
+
+            <div id="from-all-1">
+              <div class="login">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                </div>
+                <h1 onclick="show_hide()">Log In</h1>
+                <div class="container1">
+                  <label for="uname"><b>電子信箱</b></label>
+                  <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                  <label for="psw"><b>密碼</b></label>
+                  <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                  <button type="submit" class=log>登入</button>
+
+                  <div class="rememberme">
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> 記住我
+                    </label>
+                  </div>
+                  <h2 onclick="show_hide()">~<br>Sign up<br>~</h2>
+
+                  <div class="container">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="from-all-2">
+              <div class="signup">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+                </div>
+                <h1>Sign up</h1>
+                <div class="container1">
+                  <label for="uname"><b>使用者名稱</b></label>
+                  <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                  <label for="email"><b>電子信箱</b></label>
+                  <input type="email" placeholder="example@mail.com" name="newemail" required>
+
+                  <label for="psw"><b>密碼</b></label>
+                  <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                  <button type="submit" class=log>註冊</button>
+
+                  <div class="rememberme">
+                    💜🤍🧡
+                  </div>
+                  <p onclick="show_hide()">~ Back ~</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p>MY CART</p>
+    <div class="car-list">
+      <ul>
+        <li>
+          <div id="my-list" class="car-flex">
+            <div>
+              <img class=car-product src="./assets/img/candle1.jpg">
+            </div>
+            <div class="car-name">
+              <h1>玫瑰香氛蠟燭</h1>
+              <p>&times; 1</p>
+              <span>$ 450</span>
+            </div>
+            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+          </div>
+        </li>
+        <li>
+          <div id="my-list" class="car-flex">
+            <div>
+              <img class=car-product src="./assets/img/candle11.jpg">
+            </div>
+            <div class="car-name">
+              <h1>肉桂橘子<br>香氛蠟燭</h1>
+              <p>&times; 1</p>
+              <span>$ 450</span>
+            </div>
+            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+          </div>
+        </li>
+        <li>
+          <div id="my-list" class="car-flex">
+            <div>
+              <img class=car-product src="./assets/img/oil6.jpg">
+            </div>
+            <div class="car-name">
+              <h1>佛手柑精油</h1>
+              <p>&times; 1</p>
+              <span>$ 350</span>
+            </div>
+            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+          </div>
+        </li>
+        <li>
+          <div id="my-list" class="car-flex">
+            <div>
+              <img class=car-product src="./assets/img/Ess3.jpg">
+            </div>
+            <div class="car-name">
+              <h1>薰衣草擴香瓶</h1>
+              <p>&times; 2</p>
+              <span>$ 500</span>
+            </div>
+            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="gobuy">
+      <p>商品總計</p><span>NT$1750</span><br>
+      <div class=gobuy-click><a href="./gopay.html">前往結帳</a></div>
+    </div>
+  </div>
+
+
+
+  <script src="assets/js/menu.js"></script>
+
+
+
+  <div class="all">
+
+    <div class="list1">
+      <div class="fixed-list1">
+
+        <ul>
+          <li class="title">Fragrance Notes</li>
+
+          <li>
+            <div class="topnav">
+              <input type="text" placeholder="Search.." name="search">
+              <div class="search-container">
+
+
+                <button type="submit"><img src="./assets/img/search.png"></button>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="big"><a href="#FloralNotes" id="Floral">Floral Notes</a></li>
+
+          <li>玫瑰 | 櫻花 | 薰衣草</li>
+
+          <li class="big"><a href="#FruityNotes" id="Fruity">Fruity Notes</a></li>
+
+          <li>英梨 | 黑莓 | 佛手柑</li>
+
+          <li class="big"><a href="#WoodyNotes" id="Woody">Woody Notes</a></li>
+
+          <li>雪松 | 威士忌 | 鼠尾草</li>
+
+          <li class="big"><a href="#SpiceNotes" id="Spice">Spice Notes</a></li>
+
+          <li>焦糖蘋果 | 肉桂橘子</li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="oil">
+      <div class="parallax" id="FloralNotes">
+        <div class="flowerword">
+          <h1>Floral Notes</h1>
+          <p>典雅的花香氣息讓人心曠神<br>，靜淡雅的芬芳讓心情變的溫潤。</p>
+        </div>
+
+      </div>
+
+      <div class="flowertitle">
+        <h1>~ Rose ~</h1>
+      </div>
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CRose.html"><img src="./assets/img/candle1.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="./ORose.html"><img src="./assets/img/oil1.jpg"></a>
+          <div class="container">
+            <h4><b>Essential Oil</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="./BRose.html"><img src="./assets/img/Ess1.jpg"></a>
+          <div class="container">
+            <h4><b>Diffuser bottle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="flowertitle">
+          <h1>~ Sakura ~</h1>
+        </div>
+        <div class="oiltop">
+
+          <div class="card">
+            <a href="./CSakura.html"><img src="./assets/img/candle2.jpg"></a>
+            <div class="container">
+              <h4><b>Scented candle</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./OSakura.html"><img src="./assets/img/oil2.jpg"></a>
+            <div class="container">
+              <h4><b>Essential Oil</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flowertitle">
+          <h1>~ Lavender ~</h1>
+        </div>
+        <div class="oiltop">
+
+          <div class="card">
+            <a href="./CLavender.html"><img src="./assets/img/candle3.jpg"></a>
+            <div class="container">
+              <h4><b>Scented candle</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./OLavender.html"><img src="./assets/img/oil3.jpg"></a>
+            <div class="container">
+              <h4><b>Essential Oil</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="./BLavender .html"><img src="./assets/img/ess3.jpg"></a>
+            <div class="container">
+              <h4><b>Diffuser bottle</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="parallax" id="FruityNotes">
+        <div class="flowerword">
+          <h1>Fruity Note</h1>
+          <p>有淡淡酸甜的香氣，清新乾爽<br>適合活潑好動、充滿活力的年輕人。</p>
+        </div>
+
+      </div>
+
+      <div class="flowertitle">
+        <h1>~ Pear ~</h1>
+      </div>
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CPear.html"><img src="./assets/img/candle4.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="./BPear.html"><img src="./assets/img/Ess4.jpg"></a>
+          <div class="container">
+            <h4><b>Diffuser bottle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="flowertitle">
+        <h1>~ Blackberry ~</h1>
+      </div>
+
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CBlackberry.html"><img src="./assets/img/candle5.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="./OBlackberry.html"><img src="./assets/img/oil5.jpg"></a>
+          <div class="container">
+            <h4><b>Essential Oil</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flowertitle">
+        <h1>~ Bergamot ~</h1>
+      </div>
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CBergamot.html"><img src="./assets/img/candle6.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="./OBergamot.html"><img src="./assets/img/oil6.jpg"></a>
+          <div class="container">
+            <h4><b>Essential Oil</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="./BBergamot.html"><img src="./assets/img/ess6.jpg"></a>
+          <div class="container">
+            <h4><b>Diffuser bottle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="parallax" id="WoodyNotes">
+        <div class="flowerword">
+          <h1>Woody Note</h1>
+          <p>木質調香調聞起來穩重而優雅<br>適合男生、喜歡溫暖氣息的人，或在冬天使用。</p>
+        </div>
+
+      </div>
+
+      <div class="flowertitle">
+        <h1>~ Cedruswood ~</h1>
+      </div>
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CCedruswood.html"><img src="./assets/img/candle7.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="./OCedruswood.html"><img src="./assets/img/oil7.jpg"></a>
+          <div class="container">
+            <h4><b>Essential Oil</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flowertitle">
+        <h1>~ Whisky ~</h1>
+      </div>
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CWhisky.html"><img src="./assets/img/candle8,.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="./BWhisky.html"><img src="./assets/img/ess8.jpg"></a>
+          <div class="container">
+            <h4><b>Diffuser bottle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+        <div class="flowertitle">
+          <h1>~ Wood Sage & Sea Salt ~</h1>
+        </div>
+        <div class="oiltop">
+          <div class="card">
+            <a href="./CWoodSageSeaSalt .html"><img src="./assets/img/candle9.jpg"></a>
+            <div class="container">
+              <h4><b>Salt candle</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./OWood Sage Sea Salt .html"><img src="./assets/img/oil9.jpg"></a>
+            <div class="container">
+              <h4><b>Essential Oil</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="./BWood Sage Sea Salt.html"><img src="./assets/img/ess8.jpg"></a>
+            <div class="container">
+              <h4><b>Diffuser bottle</b></h4>
+              <p>elaborate handiwork</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="parallax" id="SpiceNotes">
+        <div class="flowerword">
+          <h1>Spice Note</h1>
+          <p>香甜果實與辛香料融合<br>甜美滋味、可口香甜而溫暖。</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="flowertitle">
+        <h1>~ Caramel Apple ~</h1>
+      </div>
+      <div class="oiltop">
+
+        <div class="card">
+          <a href="./CCaramel Apple .html"><img src="./assets/img/candle10.jpg"></a>
+          <div class="container">
+            <h4><b>Scented candle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="./BCaramel Apple.html"><img src="./assets/img/Ess10.jpg"></a>
+          <div class="container">
+            <h4><b>Diffuser bottle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+      </div>
+      <div class="flowertitle">
+        <h1>~ Cinnamon Oranges ~</h1>
+      </div>
+      <div class="oiltop">
+        <div class="card">
+          <a href="./CCinnamon Oranges .html"><img src="./assets/img/candle11.jpg"></a>
+          <div class="container">
+            <h4><b>Cinnamon Oranges</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="./OCinnamon Oranges .html"><img src="./assets/img/oil11.jpg"></a>
+          <div class="container">
+            <h4><b>Essential Oil</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="./BCinnamon Oranges.html"><img src="./assets/img/ess11.jpg"></a>
+          <div class="container">
+            <h4><b>Diffuser bottle</b></h4>
+            <p>elaborate handiwork</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-all">
+
+      <div class="footer-up">
+        <div class="footer-1">
+          <h1>香氛密室 <span> Fragrance.Home</span></h1>
+          <h2>服務時間</h2>
+          <p>周一至周五 早上10:00至下午5:00</p>
+        </div>
+        <div class="footer-2">
+          <h2>聯絡我們</h2>
+          <P>Tel : 0912345678 || <span> IG : <a href="https://www.instagram.com/cycuim/">cycuim</a></span> ||
+            <span> FB : <a href="https://www.facebook.com/groups/196334640403577">CYCU_IM</a> </span>
+          </P>
+        </div>
+        <div class="footer-3">
+          <h2>ABOUT</h2>
+          <span><a href="./Fragrance_Note.html">所有商品↗ <span> | </span></a></span> <span><a href="./aboutus.html">
+              關於我們↗
+            </a></span>
+        </div>
+      </div>
+
+      <div class="footer-down">
+        <span>網頁瀏覽人數:100人</span>
+        <p>Copyright@2021 By - Pei Ying, Jenny, Ru Fang, Ting Jhih - All Rights Reseved</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="top">
+    <img onclick="topFunction()" id="myBtn" title="Go TOP" src="./assets/img/top3.png">
+    <img onclick="topFunction()" id="myBtn0" src="./assets/img/top0.png">
+  </div>
+
+
+
+  <script src="./assets/js/top.js"></script>
+
+</body>
+
+</html>

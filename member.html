@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/member.css">
+<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+<style> </style>
+
+<body>
+    <header>
+        <div id="navbar" class="navbarclass">
+            <div class="home-0"><a href="./index.html">Fragrance.Home</a></div>
+            <div class="menu-0">
+                <ul>
+                    <li>
+                        <a href="./All_Product.html">ALL</a>
+                        <div class="undercolor1"></div>
+                    </li>
+                    <li>
+                        <a href="./Fragrance_Note.html">NOTES</a>
+                        <div class="undercolor2"></div>
+                        <ul>
+                            <li>
+                                <div class="color-1"></div>
+                                <div class="fragrance-1">Floral Notes 花香調</div>
+                            </li>
+                            <li>
+                                <div class="color-2"></div>
+                                <div class="fragrance-2">Fruity Notes 果香調</div>
+                            </li>
+                            <li>
+                                <div class="color-3"></div>
+                                <div class="fragrance-3">Woody Notes 木質調</div>
+                            </li>
+                            <li>
+                                <div class="color-4"></div>
+                                <div class="fragrance-4">Gourmand Notes 美食調</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">ABOUT US</a>
+                        <div class="undercolor3"></div>
+                    </li>
+                    <li>
+                        <a href="./member.html">MEMBER</a>
+                        <div class="undercolor4"></div>
+                    </li>
+                </ul>
+                <div class="hard1-car-shop">
+                    <div class="hard1">
+                        <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Log In<div class="undercolor5"></div></button>
+                    </div>|
+                    <div class="menu-1">
+                        <a href=" ">Sign out</a>
+                        <div class="undercolor6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+                </span>
+            </div>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class=from-all>
+
+
+                        <div id="from-all-1">
+                            <div class="login">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1 onclick="show_hide()">Log In</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>電子信箱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="* * * * * * * *" name="psw" required>
+
+                                    <button type="submit" class=log>登入</button>
+
+                                    <div class="rememberme">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> 記住我
+                                        </label>
+                                    </div>
+                                    <h2 onclick="show_hide()">~<br>Sign up<br>~</h2>
+
+                                    <div class="container">
+                                        <div class="chevron"></div>
+                                        <div class="chevron"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="from-all-2">
+                            <div class="signup">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1>Sign up</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>使用者名稱</b></label>
+                                    <input type="text" placeholder="sugar daddy" name="uname" required>
+
+                                    <label for="email"><b>電子信箱</b></label>
+                                    <input type="email" placeholder="example@mail.com" name="newemail" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="須包含英文大小寫、數字~" name="psw" required>
+
+                                    <button type="submit" class=log>註冊</button>
+
+                                    <div class="rememberme">
+                                        💜🤍🧡
+                                    </div>
+                                    <p onclick="show_hide()">~ Back ~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>MY CART</p>
+        <div class="car-list">
+            <ul>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle1.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>玫瑰香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle11.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>肉桂橘子<br>香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/oil6.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>佛手柑精油</h1>
+                            <p>&times; 1</p>
+                            <span>$ 350</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/Ess3.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>薰衣草擴香瓶</h1>
+                            <p>&times; 2</p>
+                            <span>$ 500</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="gobuy">
+            <p>商品總計</p><span>NT$2250</span><br>
+            <div class=gobuy-click><a href="./gopay.html">前往結帳</a></div>
+        </div>
+    </div>
+
+
+
+    <div class="expect-header-height">
+
+
+
+        <!---
+        <div class="slideshow-container" style="filter:brightness(90%)">
+
+            <div class="mySlides fade">
+                <img class="dynamic_ad" src="./assets/img/dynamic_ad1.jpg">
+                <div class="dynamic-0">
+                    <div class="upwordtext">
+                        <p>Secret</p>
+                    </div>
+                    <div class="text-ad">
+                        <p>你深藏已久的秘密<br> 都交由密室來替你守護吧!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="dynamic_ad" src="./assets/img/dynamic_ad12.jpg">
+                <div class="dynamic-0">
+                    <div class="upwordtext">
+                        <p>Mar.01</p>
+                    </div>
+                    <div class="text-ad">
+                        <p>不經意的留下屬於自己的標誌。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="dynamic_ad" src="./assets/img/dynamic_ad5.jpg">
+                <div class="dynamic-0">
+                    <div class="upwordtext">
+                        <p>Jun.14</p>
+                    </div>
+                    <div class="text-ad">
+                        <p>創造獨有的香氛印象。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="dynamic_ad" src="./assets/img/dynamic_ad15.jpg">
+                <div class="dynamic-0">
+                    <div class="upwordtext">
+                        <p>Sep.09</p>
+                    </div>
+                    <div class="text-ad">
+                        <p>你需要兩種香水。一種讓你變得<br>令人無法抗拒，另一種讓你無可取代。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="dynamic_ad" src="./assets/img/dynamic_ad11.jpg">
+                <div class="dynamic-0">
+                    <div class="upwordtext">
+                        <p>Dec.24</p>
+                    </div>
+                    <div class="text-ad">
+                        <p>尋找你的冬日專屬依存感香氣。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>--->
+
+        <h1>會員資料 Member Profile</h1>
+        <div class="member-all">
+            <div class="tab">
+                <div class="tab-content"><button class="tablinks" onclick="openCity(event, 'London')">
+                        <img src="./assets/img/member1.png"><span>個人<br>資料</span></button>
+                </div>
+                <div class="tab-content"><button class="tablinks" onclick="openCity(event, 'Paris')">
+                        <img src="./assets/img/member2.png"><span>消費<br>紀錄</span></button>
+                </div>
+                <div class="tab-content"><button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                        <img src="./assets/img/member3.png"><span>評論<br>紀錄</span></button>
+                </div>
+            </div>
+
+            <div id="London" class="tabcontent" style="display:block">
+                <div class="london-backgroundcolor">
+                    <img src="./assets/img/profile1-1.jpg">
+
+                    <h3>~ My Profile ~</h3>
+                    <p><span>姓名 : </span>應小霈</p>
+                    <br>
+                    <p><span>暱稱 : </span>仙貝</p>
+                    <br>
+                    <p><span>生日 : </span>2001/1/1</p>
+                    <br>
+                    <p><span>電子信箱 : </span>Sabrinaaa15@mail.com</p>
+                    <br>
+                    <p><span>手機號碼 : </span>0935866523</p>
+
+                    <div class="buttontwice">
+                        <div class="buttontwice-1"><button class="changeprofile" id="changeProfile"
+                                onclick="openCity(event, 'Profile')">修改資料</button>
+                        </div>
+                        <div class="buttontwice-2"><button class="changepassword" id="changePassword"
+                                onclick="openCity(event, 'Password')">修改密碼</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <div class="paris-backgroundcolor">
+                    <h3>~ Purchased ~</h3>
+                    <div class="purchased">
+                        <p>2021/12/17</p>
+                        <div class="purchased-top">
+                            <div class="purchased-number">
+                                <p>訂單編號 - 20211217Qqkp</p>
+                            </div>
+                            <div class="purchased-finished">
+                                <p>已完成</p>
+                            </div>
+                        </div>
+                        <div class="purchased-list">
+                            <div class="purchased-list-l">
+                                <P>櫻花香氛蠟燭</P>
+                                <p>焦糖蘋果香氛蠟燭</p>
+                                <p>雪松擴香瓶</p>
+                            </div>
+                            <div class="purchased-list-mid">
+                                <p>x1</p>
+                                <p>x2</p>
+                                <p>x1</p>
+                            </div>
+                            <div class="purchased-list-r">
+                                <p>$450</p>
+                                <p>$900</p>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                        <div class="purchased-bottom">
+                            <P>收件地址 <span> 台北市信義區松智路17號二樓</span></P>
+                            <p>付費方式 <span> ATM 轉帳</span></p>
+                            <div class="purchased-end">總計 $1850</div>
+                        </div>
+                    </div>
+
+
+                    <div class="purchased">
+                        <p>2021/12/20</p>
+                        <div class="purchased-top">
+                            <div class="purchased-number">
+                                <p>訂單編號 - 20211220Plkt</p>
+                            </div>
+                            <div class="purchased-finished">
+                                <p>已完成</p>
+                            </div>
+                        </div>
+                        <div class="purchased-list">
+                            <div class="purchased-list-l">
+                                <P>肉桂橘子香氛蠟燭</P>
+                                <p>威士忌精油</p>
+                            </div>
+                            <div class="purchased-list-mid">
+                                <p>x1</p>
+                                <p>x1</p>
+
+                            </div>
+                            <div class="purchased-list-r">
+                                <p>$450</p>
+                                <p>$350</p>
+
+                            </div>
+                        </div>
+                        <div class="purchased-bottom">
+                            <P>收件地址 <span> 台北市信義區松智路17號二樓</span></P>
+                            <p>付費方式 <span> 7-11 ibon 代碼繳費</span></p>
+                            <div class="purchased-end">總計 $800</div>
+                        </div>
+                    </div>
+
+
+                    <div class="purchased">
+                        <p>2021/12/17</p>
+                        <div class="purchased-top">
+                            <div class="purchased-number">
+                                <p>訂單編號 - 20211217Qqkp</p>
+                            </div>
+                            <div class="purchased-finished">
+                                <p>已完成</p>
+                            </div>
+                        </div>
+                        <div class="purchased-list">
+                            <div class="purchased-list-l">
+                                <P>英梨香氛蠟燭</P>
+                                <p>薰衣草精油</p>
+                                <p>玫瑰精油</p>
+                                <p>玫瑰擴香瓶</p>
+                                <p>鼠尾草海鹽擴香瓶</p>
+                            </div>
+                            <div class="purchased-list-mid">
+                                <p>x1</p>
+                                <p>x1</p>
+                                <p>x3</p>
+                                <p>x2</p>
+                                <p>x1</p>
+                            </div>
+                            <div class="purchased-list-r">
+                                <p>$450</p>
+                                <p>$350</p>
+                                <p>$1050</p>
+                                <p>$1000</p>
+                                <P>$500</P>
+                            </div>
+                        </div>
+                        <div class="purchased-bottom">
+                            <P>收件地址 <span> 台北市信義區松智路17號二樓</span></P>
+                            <p>付費方式 <span> 貨到付款</span></p>
+                            <div class="purchased-end">總計 $3350</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <div class="tokyo-backgroundcolor">
+
+                    <h3>~ Comment Record ~</h3>
+
+                    <div class="review">
+                        <div class="user">
+                            <div class="userpic2">
+                                <img src="./assets/img/profile2.jpg">
+                            </div>
+                        </div>
+
+                        <div class="allstars">
+                            <span><b>仙貝</b> </span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="time">2021/12/17</span>
+                            <div class="wordss">
+                                <b>review:</b> 產品都好香好喜歡，尤其持香效果超讚。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="user">
+                            <div class="userpic2">
+                                <img src="./assets/img/profile2.jpg">
+                            </div>
+                        </div>
+
+                        <div class="allstars">
+                            <span><b>仙貝</b> </span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="time">2021/12/20</span>
+                            <div class="wordss">
+                                <b>review:</b> 回購很多次了，從來不會失望! 這次買來送給親朋好友。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="user">
+                            <div class="userpic2">
+                                <img src="./assets/img/profile2.jpg">
+                            </div>
+                        </div>
+
+                        <div class="allstars">
+                            <span><b>仙貝</b> </span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="sstar"></span>
+                            <span class="time">2021/12/25</span>
+                            <div class="wordss">
+                                <b>review:</b> 服務品質完善，到貨速度也很快。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="Profile" class="tabcontent">
+                <div class="profile-backgroundcolor">
+                    <h3>~ 修改資料 <sapn>Change Profile ~</sapn>
+                    </h3>
+
+                    <label for="change1"><b>姓名</b></label>
+                    <input type="changename" placeholder="應小霈" name="change1"><br>
+
+                    <label for="change5"><b>暱稱</b></label>
+                    <input type="changenick" placeholder="仙貝" name="change5"><br>
+
+                    <label for="change6"><b>生日</b></label>
+                    <input type="changebirth" placeholder="2001/1/1" name="change6"><br>
+
+                    <label for="change3"><b>電子信箱</b></label>
+                    <input type="changemail" placeholder="Sabrinaaa15@mail.com" name="change3"><br>
+
+                    <label for="change4"><b>手機</b></label>
+                    <input type="changephone" placeholder="0932874566" name="change4">
+
+                    <div class="buttontwice-3"><a href="./member.html"><button class="confirm-profile" onclick="alert('修改已完成。')">確認修改</button></a></div>
+
+                </div>
+            </div>
+
+            <div id="Password" class="tabcontent">
+                <div class="password-backgroundcolor">
+                    <h3>~ 修改密碼 <sapn>Change Password ~</sapn>
+                    </h3>
+                    <div class="password-input">
+                        <label for="change1"><b>舊密碼</b></label>
+                        <input type="oldpassword" placeholder="忘記了嗎顆顆顆" name="change5" required="required"><br>
+
+                        <label for="change2"><b>新密碼</b></label>
+                        <input type="newpassword" placeholder="這是秘密喔~" name="change6" required="required"><br>
+
+                        <label for="change3"><b>確認密碼</b></label>
+                        <input type="confirm" placeholder="小心不要打錯~" name="change7" required="required">
+                    </div>
+
+                    <div class="buttontwice-4"><a href="./member.html"><button class="confirm-password" onclick="alert('修改已完成。')">確認修改</button></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-all">
+
+            <div class="footer-up">
+                <div class="footer-1">
+                    <h1>香氛密室 <span> Fragrance.Home</span></h1>
+                    <h2>服務時間</h2>
+                    <p>周一至周五 早上10:00至下午5:00</p>
+                </div>
+                <div class="footer-2">
+                    <h2>聯絡我們</h2>
+                    <P>Tel : 0912345678 || <span> IG : <a href="https://www.instagram.com/cycuim/">cycuim</a></span>
+                        ||
+                        <span> FB : <a href="https://www.facebook.com/groups/196334640403577">CYCU_IM</a> </span>
+                    </P>
+                </div>
+                <div class="footer-3">
+                    <h2>ABOUT</h2>
+                    <span><a href="./Fragrance_Note.html">所有商品↗ <span> | </span></a></span> <span><a
+                            href="./aboutus.html"> 關於我們↗ </a></span>
+                </div>
+            </div>
+
+            <div class="footer-down">
+                <span>網頁瀏覽人數:100人</span>
+                <p>Copyright@2021 By - Pei Ying, Jenny, Ru Fang, Ting Jhih - All Rights Reseved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/member.js"></script>
+</body>
+</body>
+
+</html>

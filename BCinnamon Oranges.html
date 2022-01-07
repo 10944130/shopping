@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/product.css">
+<link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+
+<body>
+    <header>
+        <div id="navbar" class="navbarclass">
+            <div class="home-0"><a href="./index.html">Fragrance.Home</a></div>
+            <div class="menu-0">
+                <ul>
+                    <li>
+                        <a href="./All_Product.html">ALL</a>
+                        <div class="undercolor1"></div>
+                    </li>
+                    <li>
+                        <a href="./Fragrance_Note.html">NOTES</a>
+                        <div class="undercolor2"></div>
+                        <ul>
+                            <li>
+                                <div class="color-1"></div>
+                                <div class="fragrance-1">Floral Notes 花香調</div>
+                            </li>
+                            <li>
+                                <div class="color-2"></div>
+                                <div class="fragrance-2">Fruity Notes 果香調</div>
+                            </li>
+                            <li>
+                                <div class="color-3"></div>
+                                <div class="fragrance-3">Woody Notes 木質調</div>
+                            </li>
+                            <li>
+                                <div class="color-4"></div>
+                                <div class="fragrance-4">Gourmand Notes 美食調</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">ABOUT US</a>
+                        <div class="undercolor3"></div>
+                    </li>
+                    <li>
+                        <a href="./member.html">MEMBER</a>
+                        <div class="undercolor4"></div>
+                    </li>
+                </ul>
+                <div class="hard1-car-shop">
+                    <div class="hard1">
+                        <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Log In<div class="undercolor5"></div></button>
+                    </div>|
+                    <div class="menu-1">
+                        <a href=" ">Sign out</a>
+                        <div class="undercolor6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+                </span>
+            </div>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class=from-all>
+
+
+                        <div id="from-all-1">
+                            <div class="login">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1 onclick="show_hide()">Log In</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>電子信箱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>登入</button>
+
+                                    <div class="rememberme">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> 記住我
+                                        </label>
+                                    </div>
+                                    <h2 onclick="show_hide()">~<br>Sign up<br>~</h2>
+
+                                    <div class="container">
+                                        <div class="chevron"></div>
+                                        <div class="chevron"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="from-all-2">
+                            <div class="signup">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1>Sign up</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>使用者名稱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="email"><b>電子信箱</b></label>
+                                    <input type="email" placeholder="example@mail.com" name="newemail" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>註冊</button>
+
+                                    <div class="rememberme">
+                                        💜🤍🧡
+                                    </div>
+                                    <p onclick="show_hide()">~ Back ~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p>MY CART</p>
+        <div class="car-list">
+            <ul>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle1.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>玫瑰香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/candle11.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>肉桂橘子<br>香氛蠟燭</h1>
+                            <p>&times; 1</p>
+                            <span>$ 450</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/oil6.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>佛手柑精油</h1>
+                            <p>&times; 1</p>
+                            <span>$ 350</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="my-list" class="car-flex">
+                        <div>
+                            <img class=car-product src="./assets/img/Ess3.jpg">
+                        </div>
+                        <div class="car-name">
+                            <h1>薰衣草擴香瓶</h1>
+                            <p>&times; 2</p>
+                            <span>$ 500</span>
+                        </div>
+                        <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="gobuy">
+            <p>商品總計</p><span>NT$1750</span><br>
+            <div class=gobuy-click><a href="./gopay.html">前往結帳</a></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/js/menu.js"></script>
+
+
+    <div class="all">
+
+        <a href="./Fragrance_Note.html">首頁</a>>Cinnamon Oranges Diffuser bottle
+        <div class="topall">
+            <div class="pict">
+                <div class="hover" onclick="myFunction('Demo1')">
+                    <img src="./assets/img/ess011.jpg" width="300px" height="300px">
+                    <img src="./assets/img/ess11.jpg" width="300px" height="300px">
+                </div>
+            </div>
+            <div class="some">
+
+                <div class="productname">
+                    <b>
+                        <h3>肉桂橘子擴香瓶</h3>
+                    </b>
+                </div>
+                <div class="eproductname">
+                    Cinnamon Oranges Diffuser bottle </div>
+                <div class="productname">
+                    NT$500
+                    <span class="sstarsright">
+                        <span class="stars"></span>
+                        <span class="stars"></span>
+                        <span class="sstars"></span>
+                        <span class="sstars"></span>
+                        <span class="sstars"></span></span>
+                </div>
+
+
+                <div class="numandcar">
+                    <span class="numbottom">
+                        <button onclick="Less()" class="buttomstyle">－</button>
+                        <span class="centernum" id="itemcount">1</span>
+                        <button onclick="Add()" class="buttomstyle">＋</button></span>
+
+                    <button type="submit" class="cartbuttom" onclick="javascript:alert('Add to cart')">加入購物車</button>
+                </div>
+
+                <!-- <span><button class="" onclick="AddtoShoppingCart()">加入購物車</button></span>-->
+                <div class="product.html">
+                    <button class="tablink"
+                        onclick="openPage('Home', this, ' rgba(185, 131, 131, 0.938)')">Information</button>
+                    <button class="tablink" onclick="openPage('News', this, ' rgba(185, 131, 131, 0.938)')">How to
+                        use</button>
+                    <button class="tablink"
+                        onclick="openPage('Contact', this, ' rgba(185, 131, 131, 0.938)')">Precautions</button>
+
+                    <div id="Home" class="tabcontent" style="display: block;">
+                        <h3>Cinnamon Oranges Diffuser bottle</h3><br>
+                        <p>肉桂是有名的香料，具有高度香味的皮、葉和花，具有清潔、淨化等多種作用，。從樹皮中萃取，肉桂精油含強烈的清潔及淨化功能，可以淨化空氣並幫助獲得順暢清新感受。</p>
+                    </div>
+
+                    <div id="News" class="tabcontent">
+                        <h3>How to use:</h3><br>
+                        <p>1.旋開玻璃瓶上的螺蓋，並將內塞取出後，蓋上蓋子，將竹籐放置於玻璃瓶中。</p>
+                        <p>2.水平靜至於任一平台上，待竹藤慢慢釋放香味即可。</p>
+                        <p>3.為維持香芬，擴香竹使用竹籤數量會因空間、濕度、風涼而異。</p>
+                    </div>
+
+                    <div id="Contact" class="tabcontent">
+                        <h3>Precautions</h3><br>
+
+                        <p>1.請放置於兒童與寵物不易拿取之處，勿直接接觸皮膚．若不慎接觸請立即清洗。</p>
+                        <p>2.避免放置在電器旁，許多香氛道具使用精油和水劑，若和電器距離過近，會讓水和油黏著在扇葉或濾網上，造成髒汙或影響電器運作。</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="bottomall">
+
+            <div class="comment">
+                <div class="rating">
+
+                    <div class="words">Comment</div>
+
+                    <div class="starlocate">
+                        <input type="radio" name="rating" id="r1" checked>
+                        <label for="r1"></label>
+
+                        <input type="radio" name="rating" id="r2">
+                        <label for="r2"></label>
+
+                        <input type="radio" name="rating" id="r3">
+                        <label for="r3"></label>
+
+                        <input type="radio" name="rating" id="r4">
+                        <label for="r4"></label>
+
+                        <input type="radio" name="rating" id="r5">
+                        <label for="r5"></label>
+
+                    </div>
+                    <div class="commentarea">
+                        <textarea placeholder="wellcome to write some comment!"></textarea>
+                    </div>
+                    <button type="submit" class="myBtn"
+                        onclick="javascript:alert('Appreciate your advice!')">送出評論</button>
+                </div>
+            </div>
+
+            <div class="reviewall">
+                <div class="words">Review</div>
+                <div class="review">
+                    <div class="user">
+                        <div class="userpic2">
+                            <img src="./assets/img/profile2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="allstars">
+                        <span><b>username</b> </span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="sstar"></span>
+                        <span class="sstar"></span>
+                        <span class="sstar"></span>
+                        <span class="time">2021/12/25</span>
+
+                        <div class="wordss"><b>review:</b>: gooodxxxxxxxxxxxxxxxxxxx</div>
+
+                    </div>
+
+                </div>
+
+                <div class="review">
+                    <div class="user">
+                        <div class="userpic2">
+                            <img src="./assets/img/profile2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="allstars">
+                        <span><b>username</b> </span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="sstar"></span>
+                        <span class="sstar"></span>
+                        <span class="sstar"></span>
+                        <span class="time">2021/12/25</span>
+
+                        <div class="wordss"><b>review:</b> gooodxxxxxxxxxxxxxxxxxxx</div>
+
+                    </div>
+
+                </div>
+                <div class="review">
+                    <div class="user">
+                        <div class="userpic2">
+                            <img src="./assets/img/profile2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="allstars">
+                        <span><b>username</b>e </span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="sstar"></span>
+                        <span class="sstar"></span>
+                        <span class="sstar"></span>
+                        <span class="time">2021/12/25</span>
+
+                        <div class="wordss"><b>review:</b> gooodxxxxxxxxxxxxxxxxxxx</div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-all">
+
+            <div class="footer-up">
+                <div class="footer-1">
+                    <h1>香氛密室 <span> Fragrance.Home</span></h1>
+                    <h2>服務時間</h2>
+                    <p>周一至周五 早上10:00至下午5:00</p>
+                </div>
+                <div class="footer-2">
+                    <h2>聯絡我們</h2>
+                    <P>Tel : 0912345678 || <span> IG : <a href="https://www.instagram.com/cycuim/">cycuim</a></span> ||
+                        <span> FB : <a href="https://www.facebook.com/groups/196334640403577">CYCU_IM</a> </span>
+                    </P>
+                </div>
+                <div class="footer-3">
+                    <h2>ABOUT</h2>
+                    <span><a href="./Fragrance_Note.html">所有商品↗ <span> | </span></a></span> <span><a
+                            href="./aboutus.html"> 關於我們↗ </a></span>
+                </div>
+            </div>
+
+            <div class="footer-down">
+                <span>網頁瀏覽人數:100人</span>
+                <p>Copyright@2021 By - Pei Ying, Jenny, Ru Fang, Ting Jhih - All Rights Reseved</p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/products.js"></script>
+</body>
+
+</html>

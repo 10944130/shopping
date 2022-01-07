@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/top.css">
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="navbarclass">
+            <div class="navbarimportant">
+                <div class="home-0"><a href="./index.html">Fragrance.Home</a></div>
+                <div class="menu-0">
+                    <ul>
+                        <li>
+                            <a href="./All_Product.html">ALL</a>
+                            <div class="undercolor1"></div>
+                        </li>
+                        <li>
+                            <a href="./Fragrance_Note.html">NOTES</a>
+                            <div class="undercolor2"></div>
+                            <ul>
+                                <li>
+                                    <div class="color-1"></div>
+                                    <div class="fragrance-1">Floral Notes 花香調</div>
+                                </li>
+                                <li>
+                                    <div class="color-2"></div>
+                                    <div class="fragrance-2">Fruity Notes 果香調</div>
+                                </li>
+                                <li>
+                                    <div class="color-3"></div>
+                                    <div class="fragrance-3">Woody Notes 木質調</div>
+                                </li>
+                                <li>
+                                    <div class="color-4"></div>
+                                    <div class="fragrance-4">Gourmand Notes 美食調</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./aboutus.html">ABOUT US</a>
+                            <div class="undercolor3"></div>
+                        </li>
+                        <li>
+                            <a href="./member.html">MEMBER</a>
+                            <div class="undercolor4"></div>
+                        </li>
+                    </ul>
+                    <div class="hard1-car-shop">
+                        <div class="hard1">
+                            <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+                                style="width:auto;">Log In<div class="undercolor5"></div></button>
+                        </div>|
+                        <div class="menu-1">
+                            <a href=" ">Sign out</a>
+                            <div class="undercolor6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                        <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+                    </span>
+                </div>
+            </div>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class=from-all>
+
+
+                        <div id="from-all-1">
+                            <div class="login">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1 onclick="show_hide()">Log In</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>電子信箱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>登入</button>
+
+                                    <div class="rememberme">
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> 記住我
+                                        </label>
+                                    </div>
+                                    <h2 onclick="show_hide()">~<br>Sign up<br>~</h2>
+
+                                    <div class="container">
+                                        <div class="chevron"></div>
+                                        <div class="chevron"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="from-all-2">
+                            <div class="signup">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <h1>Sign up</h1>
+                                <div class="container1">
+                                    <label for="uname"><b>使用者名稱</b></label>
+                                    <input type="text" placeholder="example@mail.com" name="uname" required>
+
+                                    <label for="email"><b>電子信箱</b></label>
+                                    <input type="email" placeholder="example@mail.com" name="newemail" required>
+
+                                    <label for="psw"><b>密碼</b></label>
+                                    <input type="password" placeholder="輸入密碼" name="psw" required>
+
+                                    <button type="submit" class=log>註冊</button>
+
+                                    <div class="rememberme">
+                                        💜🤍🧡
+                                    </div>
+                                    <p onclick="show_hide()">~ Back ~</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <p>MY CART</p>
+            <div class="car-list">
+                <ul>
+                    <li>
+                        <div id="my-list" class="car-flex">
+                            <div>
+                                <img class=car-product src="./assets/img/candle1.jpg">
+                            </div>
+                            <div class="car-name">
+                                <h1>玫瑰香氛蠟燭</h1>
+                                <p>&times; 1</p>
+                                <span>$ 450</span>
+                            </div>
+                            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="my-list" class="car-flex">
+                            <div>
+                                <img class=car-product src="./assets/img/candle11.jpg">
+                            </div>
+                            <div class="car-name">
+                                <h1>肉桂橘子<br>香氛蠟燭</h1>
+                                <p>&times; 1</p>
+                                <span>$ 450</span>
+                            </div>
+                            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="my-list" class="car-flex">
+                            <div>
+                                <img class=car-product src="./assets/img/oil6.jpg">
+                            </div>
+                            <div class="car-name">
+                                <h1>佛手柑精油</h1>
+                                <p>&times; 1</p>
+                                <span>$ 350</span>
+                            </div>
+                            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="my-list" class="car-flex">
+                            <div>
+                                <img class=car-product src="./assets/img/Ess3.jpg">
+                            </div>
+                            <div class="car-name">
+                                <h1>薰衣草擴香瓶</h1>
+                                <p>&times; 2</p>
+                                <span>$ 500</span>
+                            </div>
+                            <a href="javascript:void(0)" class="closelist" onclick="closelist()">&times;</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="gobuy">
+                <p>商品總計</p><span>NT$1750</span><br>
+                <div class=gobuy-click><a href="./gopay.html">前往結帳</a></div>
+            </div>
+        </div>
+
+
+        <div class="theme-0">
+            <div class="theme"><a href="./index.html">香氛密室</a></div>
+            <div class="theme2">Welcome to the <span>Fragrance Home</span> Store.</div>
+            <div class="menu-00">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./All_Product.html">S.ROOM</a>
+                        </li>
+                        <li>
+                            <a href="./Fragrance_Note.html">NOTES</a>
+                            <ul>
+                                <li>
+                                    <div class="color-1"></div>
+                                    <div class="fragrance-1">Floral Notes 花香調</div>
+                                </li>
+                                <li>
+                                    <div class="color-2"></div>
+                                    <div class="fragrance-2">Fruity Notes 果香調</div>
+                                </li>
+                                <li>
+                                    <div class="color-3"></div>
+                                    <div class="fragrance-3">Woody Notes 木質調</div>
+                                </li>
+                                <li>
+                                    <div class="color-4"></div>
+                                    <div class="fragrance-4">Gourmand Notes 美食調</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./aboutus.html">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="./member.html">MEMBER</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hard1-car-shop">
+                    <div class="hard1">
+                        <button class="loginnn" onclick="document.getElementById('id01').style.display='block'"
+                            style="width:auto;">Log In<div class="undercolor5"></div></button>
+                    </div>|
+                    <div class="menu-1">
+                        <a href="#">Sign out</a>
+                        <div class="undercolor6"></div>
+                    </div>
+                </div>
+                <div id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                        <div class="car-shop"><img src="./assets/img/shop-car.png"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="expect-header-height">
+        <div class="section-1">
+            <div class="slideshow-container" style="filter:brightness(90%)">
+
+
+                <div class="mySlides fade" id="my-ad-4">
+                    <img class="dynamic_ad" src="./assets/img/dy15.jpg">
+
+                    <div class="dynamic-0">
+                        <div class="text-ad">
+
+                        </div>
+                    </div>
+
+                    <div class="dy-right">
+                        <span>Secret.Secret</span>
+
+                        <div class="ad-right-text">
+                            <p>你深藏已久的秘密<br> 都交由密室來替你守護吧!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="dynamic_ad" src="./assets/img/dynamic_ad1.jpg">
+                    <div class="dynamic-0">
+                        <div class="text-ad">
+
+                        </div>
+                    </div>
+
+                    <div class="dy-right">
+                        <span>Mar.03</span>
+
+                        <div class="ad-right-text">
+                            <p>不經意的留下屬於自己的標誌。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="dynamic_ad" src="./assets/img/dy1.jpg">
+                    <div class="dynamic-0">
+                        <div class="text-ad">
+
+                        </div>
+                    </div>
+
+                    <div class="dy-right">
+                        <span>Jun.10</span>
+
+                        <div class="ad-right-text">
+                            <p>創造獨有的香氛印象。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="dynamic_ad" src="./assets/img/dy8.jpg">
+                    <div class="dynamic-0">
+                        <div class="text-ad">
+
+                        </div>
+                    </div>
+
+                    <div class="dy-right">
+                        <span>Dec.24</span>
+
+                        <div class="ad-right-text">
+                            <p>尋找你的冬日專屬依存感香氣。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dot-dot" style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!--<div class="dy-text">
+                <div class="dy-text-background">
+                    <div class="dy-text-position">
+                        <p>𝙄𝙢𝙥𝙧𝙤𝙫𝙚 𝙔𝙤𝙪𝙧 𝙌𝙪𝙖𝙡𝙞𝙩𝙮 𝙊𝙛 𝙇𝙄𝙁𝙀 !</p>
+                        <p>"𝘽𝙀𝙎𝙏 𝙂𝙄𝙁𝙏𝙎"</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+
+    <div class="section-3">
+
+        <div class="slidessshow-container">
+            <h1>~ NEW GOODS ~</h1>
+            <div class="mySlidesss fadeee" id="mySlidesss">
+                <img src="./assets/img/newww1.jpg">
+            </div>
+
+            <div class="mySlidesss fadeee" id="mySlidesss">
+                <img src="./assets/img/newww2.jpg">
+            </div>
+
+            <div class="mySlidesss fadeee" id="mySlidesss">
+                <img src="./assets/img/newww3.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div class="dottt-dotttt" style="text-align:center; ">
+            <span class="dottt" onclick="currentSlide(1)"></span>
+            <span class="dottt" onclick="currentSlide(2)"></span>
+            <span class="dottt" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+
+    <div class="section-2-hotsale">
+        <div class="section-2">
+            <div class="section-2-theme">~ HOT SALE ~</div>
+            <div class="hotsale">
+                <div class="hotsale-1">
+                    <img src="./assets/img/no22222.png">
+                    <div class="card-s">
+                        <div class="card">
+                            <a href="./ORose.html"><img src="./assets/img/no2.jpg"></a>
+                            <div class="container">
+                                <h4>Rose</h4>
+                                <p>Architect & Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotsale-2">
+                    <img src="./assets/img/no11111.png">
+                    <div class="card-b">
+                        <div class="card-big">
+                            <a href="./BPear.html"><img src="./assets/img/no1.jpg"></a>
+                            <div class="container">
+                                <h4>Pear</h4>
+                                <p>Architect & Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotsale-3">
+                    <img src="./assets/img/no33333.png">
+                    <div class="card-s">
+                        <div class="card">
+                            <a href="./CWhisky.html"><img src="./assets/img/no3.jpg"></a>
+                            <div class="container">
+                                <h4>Whisky</h4>
+                                <p>Architect & Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-all">
+
+            <div class="footer-up">
+                <div class="footer-1">
+                    <h1>香氛密室 <span> Fragrance.Home</span></h1>
+                    <h2>服務時間</h2>
+                    <p>周一至周五 早上10:00至下午5:00</p>
+                </div>
+                <div class="footer-2">
+                    <h2>聯絡我們</h2>
+                    <P>Tel : 0912345678 || <span> IG : <a href="https://www.instagram.com/cycuim/">cycuim</a></span> ||
+                        <span> FB : <a href="https://www.facebook.com/groups/196334640403577">CYCU_IM</a> </span>
+                    </P>
+                </div>
+                <div class="footer-3">
+                    <h2>ABOUT</h2>
+                    <span><a href="./Fragrance_Note.html">所有商品↗ <span> | </span></a></span> <span><a
+                            href="./aboutus.html"> 關於我們↗ </a></span>
+                </div>
+            </div>
+
+            <div class="footer-down">
+                <span>網頁瀏覽人數:100人</span>
+                <p>Copyright@2021 By - Pei Ying, Jenny, Ru Fang, Ting Jhih - All Rights Reseved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="top">
+
+        <img onclick="topFunction()" id="myBtn" title="Go TOP" src="./assets/img/top3.png">
+        <img onclick="topFunction()" id="myBtn0" src="./assets/img/top0.png">
+
+    </div>
+
+
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>
