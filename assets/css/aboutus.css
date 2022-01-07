@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Comic Sans MS";
+}
+
+body {
+    background: url("../img/ccc.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    animation-delay: 2s, 4ms;
+    transition-property: opacity, left, top, width;
+    transition-duration: 2s, 4s;
+}
+
+.allabout {
+    width: 1500px;
+    margin: auto;
+    padding-top: 130px;
+}
+
+/*-----------------------------*/
+.usspic {
+    padding-bottom: 90px;
+}
+
+.usspic {
+    width: 1050px;
+    margin: auto;
+}
+
+.toptitle{
+    text-align: center;
+    padding: 5px 0 30px 0;
+    text-shadow: rgb(163, 163, 163) 5px 5px 5px;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.toptitle1{
+    text-align: center;
+    padding: 5px 0 30px 0;
+    text-shadow: rgb(163, 163, 163) 5px 5px 5px;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.dot {
+    height: 10px;
+    width: 18px;
+    margin: 0 10px;
+    background-color: #bbb;
+    border-radius: 0;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* 淡出动画 */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.0s;
+    animation-name: fade;
+    animation-duration: 3.0s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*------------------------*/
+
+
+/*品排故事*/
+.bstoryall {
+    display: flex;
+    background: url("../img/BSb.jpg");
+    background-size: 900px;
+    margin-bottom: 120px;
+}
+
+.bstoryword {
+    width: 60%;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    margin: auto;
+    line-height: 40px;
+}
+
+.bstorypic {
+    display: block;
+    width: 40%;
+
+}
+
+.bstorypic img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*關於我們*/
+.usall {
+    display: flex;
+    margin-bottom: 250px;
+
+}
+
+
+
+.flip-box {
+    background-color: transparent;
+    width: 330px;
+    height: 594px;
+    perspective: 1000px;
+    /* 3D effect */
+    margin: auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front img {
+    width: 330px;
+    height: 594px;
+    border-radius: 15px;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background: url("../img/p1.jpg");
+    background-size: contain;
+    text-align: center;
+    padding-top: 185px;
+    line-height: 40px;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.flip-box-back2 {
+    background: url("../img/p3.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 175px 0 139px 0;
+    line-height: 40px;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.flip-box-back3 {
+    background: url("../img/p2.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 170px 0 105px 0;
+    line-height: 40px;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.flip-box-back4 {
+    background: url("../img/p4.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 180px 0 135px 0;
+    line-height: 40px;
+    transform: rotateY(180deg);
+    border-radius: 15px;
+}
+
+.uswords {
+    display: block;
+    margin: 15px 0 0 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+
+}
+
+.uswords::after {
+    position: absolute;
+    background-color: rgb(203, 203, 228);
+    content: "";
+    width: 330px;
+    height: 3px;
+
+
+}
+
+.uswords2 {
+    margin: 10px 0 0 0;
+}
+
+.igpic img {
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 0;
+}
+
+
+/*聯繫我們*/
+.contactall {
+    display: flex;
+
+}
+
+.toptitle {
+    margin-top: 10px;
+}
+
+.writeus {
+    display: block;
+    width: 50%;
+    background-size: cover;
+
+}
+
+.writeform {
+    margin: 30px 20px 0 20px;
+    padding: 35px 40px 10px 40px;
+    line-height: 25px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    background-color: rgb(156, 185, 197);
+  
+}
+
+.writeform textarea {
+    width: 550px;
+    height: 300px;
+    margin: 10px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    border-radius: 30px;
+}
+
+.writetext {
+    height: 40px;
+    width: 20px;
+    border: none;
+    padding: 10px 0 0 18px;
+    border-radius: 50px;
+}
+
+.writspace {
+    margin-bottom: 22px;
+}
+
+.textoutheigh {
+    margin-left: 100px;
+
+}
+
+.mail :hover {
+    transition: all.4s;
+    transform: scale(1.15, 1.15);
+}
+
+/*------------------------------------------------*/
+.contactimfor {
+    display: block;
+}
+
+.imfor {
+
+    background-color: rgb(216, 228, 230);
+    margin: 30px 20px 0 20px;
+    padding: 35px 40px 45px 40px;
+   
+
+}
+
+.imformation {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2px;
+
+}
+
+.threeimfor {
+    margin: 10px 0 10px 0;
+    font-size: 18px;
+    line-height: 40px;
+}
